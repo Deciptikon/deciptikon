@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "autor": "Бычков Дмитрий",
+    "time": null
+  },
+
+  "data": [
+    {
+      "id": null,
+      "name": "Первый снег",
+      "type": "poetry",
+      "timeOfCreate": "05.03.25",
+      "timeOfPublication": "04.06.25",
+      "tags": ["поэзия", "природа", "восторг", "меланхолия"],
+
+      "base": "/pages/poetry/poetry1/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "Занятный стих о зиме, я пытался сделать некоторые фразы перетекающими между предложениями...",
+
+      "annotation": ""
+    },
+
+    {
+      "id": null,
+      "name": "Древнейшее проклятие",
+      "type": "poetry",
+      "timeOfCreate": "27.12.25",
+      "timeOfPublication": "27.12.25",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/poetry2/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "Стих о неизбежности и том как я её ощущаю... таких стихов много, потмоу что это чувство не отпускает",
+
+      "annotation": "Стих прошел процедуру редактирования Коваленко М.Е."
+    }
+  ]
+}
