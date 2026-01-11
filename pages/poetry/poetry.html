@@ -134,6 +134,8 @@
           poemCard.dataset.tags = poem.tags.join(" ");
 
           const imageUrl = poem.base + poem.img;
+          console.log("imageUrl", imageUrl);
+
           const illustrationUrl = poem.illustration
             ? poem.base + poem.illustration
             : imageUrl;
