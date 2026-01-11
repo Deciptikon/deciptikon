@@ -14,7 +14,7 @@
       "tags": ["поэзия", "природа", "восторг", "меланхолия"],
 
       "base": "/pages/poetry/poetry1/",
-      "img": "image.jpg",
+      "img": "image.webp",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",

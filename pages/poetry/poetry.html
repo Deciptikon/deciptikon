@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бычков Дмитрий | Стихи</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Бычков Дмитрий<span>.</span></a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-info-circle"></i> Обо мне</a>
+          </li>
+          <li>
+            <a href="./pages/poetry/poetry.html" class="active"
+              ><i class="fas fa-briefcase"></i> Стихи</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i> Статьи</a>
+          </li>
+        </ul>
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="poetry-page">
+      <div class="container">
+        <h1 class="page-title">Мои стихи</h1>
+        <p class="page-subtitle">Коллекция поэтического творчества</p>
+
+        <div class="poetry-filters">
+          <div class="filter-tags">
+            <button class="tag-filter active" data-tag="all">Все</button>
+            <button class="tag-filter" data-tag="природа">Природа</button>
+            <button class="tag-filter" data-tag="меланхолия">Меланхолия</button>
+            <button class="tag-filter" data-tag="страх">Страх</button>
+            <button class="tag-filter" data-tag="смерть">Смерть</button>
+          </div>
+        </div>
+
+        <div class="poetry-grid" id="poetryGrid">
+          <!-- Стихи будут загружены через JavaScript -->
+          <div class="loading">Загрузка стихов...</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Бычков Дмитрий<span>.</span></h3>
+            <p>Другие ресурсы где я есть.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Быстрые ссылки</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Обо мне</a></li>
+              <li><a href="poetry.html">Стихи</a></li>
+              <li><a href="#">Статьи</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Контакты</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 12
+            </p>
+            <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+            <p><i class="fas fa-envelope"></i> mail@mail.ru</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Бычков Дмитрий. Все права защищены.</p>
+          <p class="hint">Это тестовая версия сайта.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Загрузка данных стихов
+      async function loadPoetryData() {
+        try {
+          const response = await fetch("../../db.json");
+          const data = await response.json();
+          displayPoetry(data.data.filter((item) => item.type === "poetry"));
+          setupFilters();
+        } catch (error) {
+          console.error("Ошибка загрузки данных:", error);
+          document.getElementById("poetryGrid").innerHTML =
+            '<div class="error">Не удалось загрузить стихи. Попробуйте позже.</div>';
+        }
+      }
+
+      // Отображение стихов в виде плиток
+      function displayPoetry(poems) {
+        const grid = document.getElementById("poetryGrid");
+        grid.innerHTML = "";
+
+        if (poems.length === 0) {
+          grid.innerHTML = '<div class="no-poems">Стихи не найдены</div>';
+          return;
+        }
+
+        poems.forEach((poem, index) => {
+          const poemCard = document.createElement("div");
+          poemCard.className = "poetry-card";
+          poemCard.dataset.tags = poem.tags.join(" ");
+
+          const imageUrl = poem.base + poem.img;
+          const illustrationUrl = poem.illustration
+            ? poem.base + poem.illustration
+            : imageUrl;
+
+          poemCard.innerHTML = `
+                    <div class="poetry-card-image" style="background-image: url('${imageUrl}')">
+                        <div class="poetry-card-overlay">
+                            <div class="poetry-card-info">
+                                <span class="poetry-date">${
+                                  poem.timeOfPublication
+                                }</span>
+                                ${
+                                  poem.annotation
+                                    ? '<span class="poetry-annotation-badge"><i class="fas fa-star"></i> Редакция</span>'
+                                    : ""
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poetry-card-content">
+                        <h3 class="poetry-title">${poem.name}</h3>
+                        <p class="poetry-overview">${poem.overview}</p>
+                        <div class="poetry-tags">
+                            ${poem.tags
+                              .map(
+                                (tag) =>
+                                  `<span class="poetry-tag">${tag}</span>`
+                              )
+                              .join("")}
+                        </div>
+                        <a href="poetry-detail.html?poem=${index}" class="btn read-btn">
+                            <i class="fas fa-book-open"></i> Читать
+                        </a>
+                    </div>
+                `;
+
+          grid.appendChild(poemCard);
+        });
+      }
+
+      // Настройка фильтров по тегам
+      function setupFilters() {
+        const filterButtons = document.querySelectorAll(".tag-filter");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Удаляем активный класс у всех кнопок
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            // Добавляем активный класс текущей кнопке
+            this.classList.add("active");
+
+            const selectedTag = this.dataset.tag;
+            filterPoems(selectedTag);
+          });
+        });
+      }
+
+      // Фильтрация стихов по тегу
+      function filterPoems(tag) {
+        const poems = document.querySelectorAll(".poetry-card");
+
+        poems.forEach((poem) => {
+          if (tag === "all" || poem.dataset.tags.includes(tag)) {
+            poem.style.display = "block";
+          } else {
+            poem.style.display = "none";
+          }
+        });
+      }
+
+      // Загрузка данных при загрузке страницы
+      document.addEventListener("DOMContentLoaded", loadPoetryData);
+
+      // Мобильное меню
+      document
+        .querySelector(".menu-toggle")
+        ?.addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
