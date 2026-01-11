@@ -6,7 +6,7 @@
 
   "data": [
     {
-      "id": null,
+      "id": "poetry_first_snow",
       "name": "Первый снег",
       "type": "poetry",
       "timeOfCreate": "05.03.25",
@@ -25,7 +25,7 @@
     },
 
     {
-      "id": null,
+      "id": "poetry_the_oldest_curse",
       "name": "Древнейшее проклятие",
       "type": "poetry",
       "timeOfCreate": "27.12.25",
