@@ -133,11 +133,11 @@
           poemCard.className = "poetry-card";
           poemCard.dataset.tags = poem.tags.join(" ");
 
-          const imageUrl = poem.base + poem.img;
+          const imageUrl = "/deciptikon" + poem.base + poem.img;
           console.log("imageUrl", imageUrl);
 
           const illustrationUrl = poem.illustration
-            ? poem.base + poem.illustration
+            ? "/deciptikon" + poem.base + poem.illustration
             : imageUrl;
 
           poemCard.innerHTML = `
