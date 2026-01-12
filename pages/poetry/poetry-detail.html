@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бычков Дмитрий | Детали стиха</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Дополнительные стили для страницы деталей */
+      .poetry-detail {
+        padding: 60px 0;
+      }
+
+      .poetry-detail-header {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .poetry-detail-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .poetry-meta {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        color: #666;
+      }
+
+      .poetry-annotation {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        border-left: 4px solid #007bff;
+      }
+
+      .content-switcher {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        gap: 10px;
+      }
+
+      .content-btn {
+        padding: 10px 25px;
+        border: 2px solid #007bff;
+        background: white;
+        color: #007bff;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.3s;
+      }
+
+      .content-btn.active {
+        background: #007bff;
+        color: white;
+      }
+
+      .content-btn:hover:not(.active) {
+        background: #f0f7ff;
+      }
+
+      .content-display {
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .illustration-container {
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .illustration-container img {
+        max-width: 100%;
+        max-height: 600px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .text-container {
+        max-width: 800px;
+        width: 100%;
+        display: none;
+      }
+
+      .poetry-text {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        white-space: pre-line;
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+        font-family: "Raleway", sans-serif;
+        text-align: center;
+      }
+
+      .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #007bff;
+        text-decoration: none;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .back-button:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .poetry-detail-header h1 {
+          font-size: 2rem;
+        }
+
+        .poetry-meta {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .poetry-text {
+          font-size: 1.1rem;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Бычков Дмитрий<span>.</span></a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-info-circle"></i> Обо мне</a>
+          </li>
+          <li>
+            <a href="poetry.html"><i class="fas fa-briefcase"></i> Стихи</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i> Статьи</a>
+          </li>
+        </ul>
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="poetry-detail">
+      <div class="container">
+        <a href="poetry.html" class="back-button">
+          <i class="fas fa-arrow-left"></i> Вернуться к списку стихов
+        </a>
+
+        <div class="poetry-detail-header">
+          <h1 id="poemTitle">Загрузка...</h1>
+          <div class="poetry-meta">
+            <span
+              ><i class="far fa-calendar"></i> Создан:
+              <span id="createdDate"></span
+            ></span>
+            <span
+              ><i class="far fa-calendar-check"></i> Опубликован:
+              <span id="publishedDate"></span
+            ></span>
+          </div>
+
+          <div class="poetry-tags" id="poemTags"></div>
+
+          <div id="poemOverview"></div>
+
+          <div
+            class="poetry-annotation"
+            id="poemAnnotation"
+            style="display: none"
+          ></div>
+        </div>
+
+        <div class="content-switcher">
+          <button class="content-btn active" data-content="illustration">
+            <i class="fas fa-image"></i> Иллюстрация
+          </button>
+          <button class="content-btn" data-content="text">
+            <i class="fas fa-font"></i> Текст
+          </button>
+        </div>
+
+        <div class="content-display">
+          <div class="illustration-container" id="illustrationContainer">
+            <img id="poemIllustration" src="" alt="Иллюстрация к стиху" />
+          </div>
+
+          <div class="text-container" id="textContainer">
+            <div class="poetry-text" id="poemText"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Бычков Дмитрий<span>.</span></h3>
+            <p>Другие ресурсы где я есть.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Быстрые ссылки</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Обо мне</a></li>
+              <li><a href="poetry.html">Стихи</a></li>
+              <li><a href="#">Статьи</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Контакты</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 12
+            </p>
+            <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+            <p><i class="fas fa-envelope"></i> mail@mail.ru</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Бычков Дмитрий. Все права защищены.</p>
+          <p class="hint">Это тестовая версия сайта.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      async function loadPoemDetail() {
+        try {
+          // Получаем ID стиха из URL
+          const urlParams = new URLSearchParams(window.location.search);
+          const poemIndex = urlParams.get("poem");
+
+          if (poemIndex === null) {
+            throw new Error("Стих не указан");
+          }
+
+          // Загружаем данные
+          const response = await fetch("../../db.json");
+          const data = await response.json();
+          const poems = data.data.filter((item) => item.type === "poetry");
+
+          if (poemIndex >= poems.length) {
+            throw new Error("Стих не найден");
+          }
+
+          const poem = poems[poemIndex];
+
+          // Заполняем информацию
+          document.getElementById("poemTitle").textContent = poem.name;
+          document.getElementById("createdDate").textContent =
+            poem.timeOfCreate;
+          document.getElementById("publishedDate").textContent =
+            poem.timeOfPublication;
+          document.getElementById(
+            "poemOverview"
+          ).innerHTML = `<p class="poetry-overview">${poem.overview}</p>`;
+
+          // Отображаем теги
+          const tagsContainer = document.getElementById("poemTags");
+          tagsContainer.innerHTML = poem.tags
+            .map((tag) => `<span class="poetry-tag">${tag}</span>`)
+            .join("");
+
+          // Отображаем аннотацию, если есть
+          if (poem.annotation) {
+            const annotationContainer =
+              document.getElementById("poemAnnotation");
+            annotationContainer.innerHTML = `<strong>Примечание:</strong> ${poem.annotation}`;
+            annotationContainer.style.display = "block";
+          }
+
+          // Загружаем иллюстрацию
+          const illustrationUrl = poem.illustration
+            ? "/deciptikon" + poem.base + poem.illustration
+            : "/deciptikon" + poem.base + poem.img;
+          document.getElementById("poemIllustration").src = illustrationUrl;
+
+          // Загружаем текст стиха
+          await loadPoemText(poem.base + poem.text);
+        } catch (error) {
+          console.error("Ошибка загрузки:", error);
+          document.querySelector(".poetry-detail-header").innerHTML =
+            "<h1>Ошибка</h1><p>Не удалось загрузить стих. Попробуйте позже.</p>";
+        }
+      }
+
+      async function loadPoemText(textUrl) {
+        try {
+          const response = await fetch(textUrl);
+          if (!response.ok) throw new Error("Файл не найден");
+
+          const text = await response.text();
+          document.getElementById("poemText").textContent = text;
+        } catch (error) {
+          console.error("Ошибка загрузки текста:", error);
+          document.getElementById("poemText").textContent =
+            "Текст стиха временно недоступен.";
+        }
+      }
+
+      // Переключение между иллюстрацией и текстом
+      function setupContentSwitcher() {
+        const buttons = document.querySelectorAll(".content-btn");
+        const illustrationContainer = document.getElementById(
+          "illustrationContainer"
+        );
+        const textContainer = document.getElementById("textContainer");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Убираем активный класс у всех кнопок
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            // Добавляем активный класс текущей кнопке
+            this.classList.add("active");
+
+            const contentType = this.dataset.content;
+
+            if (contentType === "illustration") {
+              illustrationContainer.style.display = "block";
+              textContainer.style.display = "none";
+            } else {
+              illustrationContainer.style.display = "none";
+              textContainer.style.display = "block";
+            }
+          });
+        });
+      }
+
+      // Загрузка при открытии страницы
+      document.addEventListener("DOMContentLoaded", () => {
+        loadPoemDetail();
+        setupContentSwitcher();
+      });
+
+      // Мобильное меню
+      document
+        .querySelector(".menu-toggle")
+        ?.addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
