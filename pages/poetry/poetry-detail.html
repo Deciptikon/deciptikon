@@ -312,7 +312,7 @@
           document.getElementById("poemIllustration").src = illustrationUrl;
 
           // Загружаем текст стиха
-          await loadPoemText(poem.base + poem.text);
+          await loadPoemText("/deciptikon" + poem.base + poem.text);
         } catch (error) {
           console.error("Ошибка загрузки:", error);
           document.querySelector(".poetry-detail-header").innerHTML =
