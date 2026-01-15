@@ -103,7 +103,7 @@
 
       .illustration-container img {
         max-width: 100%;
-        max-height: 600px;
+        max-height: 800px;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       }
@@ -163,20 +163,16 @@
     <!-- Навигация -->
     <nav class="navbar">
       <div class="container">
-        <a href="/deciptikon/index.html" class="logo"
-          >Бычков Дмитрий<span>.</span></a
-        >
+        <a href="/index.html" class="logo">Бычков Дмитрий<span>.</span></a>
         <ul class="nav-links">
           <li>
-            <a href="/deciptikon/index.html"
-              ><i class="fas fa-home"></i> Главная</a
-            >
+            <a href="/index.html"><i class="fas fa-home"></i> Главная</a>
           </li>
           <li>
             <a href="#"><i class="fas fa-info-circle"></i> Обо мне</a>
           </li>
           <li>
-            <a href="/deciptikon/pages/poetry/poetry.html"
+            <a href="/pages/poetry/poetry.html"
               ><i class="fas fa-briefcase"></i> Стихи</a
             >
           </li>
@@ -193,7 +189,7 @@
     <!-- Основной контент -->
     <main class="poetry-detail">
       <div class="container">
-        <a href="/deciptikon/pages/poetry/poetry.html" class="back-button">
+        <a href="/pages/poetry/poetry.html" class="back-button">
           <i class="fas fa-arrow-left"></i> Вернуться к списку стихов
         </a>
 
@@ -265,9 +261,9 @@
           <div class="footer-section">
             <h4>Быстрые ссылки</h4>
             <ul>
-              <li><a href="/deciptikon/index.html">Главная</a></li>
+              <li><a href="/index.html">Главная</a></li>
               <li><a href="#">Обо мне</a></li>
-              <li><a href="/deciptikon/pages/poetry/poetry.html">Стихи</a></li>
+              <li><a href="/pages/poetry/poetry.html">Стихи</a></li>
               <li><a href="#">Статьи</a></li>
             </ul>
           </div>
@@ -334,12 +330,12 @@
 
           // Загружаем иллюстрацию
           const illustrationUrl = poem.illustration
-            ? "/deciptikon" + poem.base + poem.illustration
-            : "/deciptikon" + poem.base + poem.img;
+            ? poem.base + poem.illustration
+            : poem.base + poem.img;
           document.getElementById("poemIllustration").src = illustrationUrl;
 
           // Загружаем текст стиха
-          await loadPoemText("/deciptikon" + poem.base + poem.text);
+          await loadPoemText(poem.base + poem.text);
 
           // Отображаем аннотацию, если есть
           if (poem.annotation) {

@@ -24,20 +24,16 @@
     <!-- Навигация -->
     <nav class="navbar">
       <div class="container">
-        <a href="/deciptikon/index.html" class="logo"
-          >Бычков Дмитрий<span>.</span></a
-        >
+        <a href="/index.html" class="logo">Бычков Дмитрий<span>.</span></a>
         <ul class="nav-links">
           <li>
-            <a href="/deciptikon/index.html"
-              ><i class="fas fa-home"></i> Главная</a
-            >
+            <a href="/index.html"><i class="fas fa-home"></i> Главная</a>
           </li>
           <li>
             <a href="#"><i class="fas fa-info-circle"></i> Обо мне</a>
           </li>
           <li>
-            <a href="/deciptikon/pages/poetry/poetry.html" class="active"
+            <a href="/pages/poetry/poetry.html" class="active"
               ><i class="fas fa-briefcase"></i> Стихи</a
             >
           </li>
@@ -91,9 +87,9 @@
           <div class="footer-section">
             <h4>Быстрые ссылки</h4>
             <ul>
-              <li><a href="/deciptikon/index.html">Главная</a></li>
+              <li><a href="/index.html">Главная</a></li>
               <li><a href="#">Обо мне</a></li>
-              <li><a href="/deciptikon/pages/poetry/poetry.html">Стихи</a></li>
+              <li><a href="/pages/poetry/poetry.html">Стихи</a></li>
               <li><a href="#">Статьи</a></li>
             </ul>
           </div>
@@ -143,11 +139,11 @@
           poemCard.className = "poetry-card";
           poemCard.dataset.tags = poem.tags.join(" ");
 
-          const imageUrl = "/deciptikon" + poem.base + poem.img;
+          const imageUrl = poem.base + poem.img;
           console.log("imageUrl", imageUrl);
 
           const illustrationUrl = poem.illustration
-            ? "/deciptikon" + poem.base + poem.illustration
+            ? poem.base + poem.illustration
             : imageUrl;
 
           poemCard.innerHTML = `
