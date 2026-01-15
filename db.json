@@ -13,7 +13,7 @@
       "timeOfPublication": "04.06.25",
       "tags": ["поэзия", "природа", "восторг", "меланхолия"],
 
-      "base": "/pages/poetry/poetry1/",
+      "base": "/pages/poetry/",
       "img": "image.webp",
       "text": "text.txt",
       "illustration": "illustration.png",
@@ -33,7 +33,7 @@
       "timeOfPublication": "27.12.25",
       "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
 
-      "base": "/pages/poetry/poetry2/",
+      "base": "/pages/poetry/",
       "img": "image.jpg",
       "text": "text.txt",
       "illustration": "illustration.png",
@@ -42,6 +42,46 @@
       "overview": "Стих о неизбежности и том как я её ощущаю... таких стихов много, потмоу что это чувство не отпускает",
 
       "annotation": "Этот стих был написан за один вечер)))",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_existence",
+      "name": "Экзистенция",
+      "type": "poetry",
+      "timeOfCreate": "21.11.17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_moment",
+      "name": "Мгновение",
+      "type": "poetry",
+      "timeOfCreate": "12.04.18",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
       "redacted": "Коваленко М.Е."
     }
   ]

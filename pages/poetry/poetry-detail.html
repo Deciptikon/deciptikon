@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../favicon-32x32.png"
+      href="../../favicon-32x32_round.png"
     />
     <link rel="stylesheet" href="../../style.css" />
     <link
@@ -330,12 +330,12 @@
 
           // Загружаем иллюстрацию
           const illustrationUrl = poem.illustration
-            ? poem.base + poem.illustration
-            : poem.base + poem.img;
+            ? poem.base + `${poem.id}/` + poem.illustration
+            : poem.base + `${poem.id}/` + poem.img;
           document.getElementById("poemIllustration").src = illustrationUrl;
 
           // Загружаем текст стиха
-          await loadPoemText(poem.base + poem.text);
+          await loadPoemText(poem.base + `${poem.id}/` + poem.text);
 
           // Отображаем аннотацию, если есть
           if (poem.annotation) {
