@@ -158,7 +158,7 @@
                                   poem.timeOfPublication
                                 }</span>
                                 ${
-                                  poem.annotation
+                                  poem.redacted.length !== 0
                                     ? '<span class="poetry-annotation-badge"><i class="fas fa-star"></i> Редакция</span>'
                                     : ""
                                 }

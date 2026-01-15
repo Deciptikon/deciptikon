@@ -44,8 +44,16 @@
         color: #666;
       }
 
+      .poetry-redaction {
+        background: #feffda;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        border-left: 4px solid #fff200;
+      }
+
       .poetry-annotation {
-        background: #f8f9fa;
+        background: #cbe5ff;
         padding: 15px;
         border-radius: 8px;
         margin-top: 20px;
@@ -104,17 +112,19 @@
         max-width: 800px;
         width: 100%;
         display: none;
+        text-align: center;
       }
 
       .poetry-text {
         font-size: 1.2rem;
         line-height: 1.8;
-        white-space: pre-line;
+        white-space: pre;
         background: #f8f9fa;
         padding: 30px;
         border-radius: 10px;
         font-family: "Raleway", sans-serif;
-        text-align: center;
+        text-align: left;
+        display: inline-block;
       }
 
       .back-button {
@@ -205,8 +215,8 @@
           <div id="poemOverview"></div>
 
           <div
-            class="poetry-annotation"
-            id="poemAnnotation"
+            class="poetry-redaction"
+            id="poemRedacted"
             style="display: none"
           ></div>
         </div>
@@ -229,6 +239,12 @@
             <div class="poetry-text" id="poemText"></div>
           </div>
         </div>
+
+        <div
+          class="poetry-annotation"
+          id="poemAnnotation"
+          style="display: none"
+        ></div>
       </div>
     </main>
 
@@ -310,10 +326,9 @@
             .join("");
 
           // Отображаем аннотацию, если есть
-          if (poem.annotation) {
-            const annotationContainer =
-              document.getElementById("poemAnnotation");
-            annotationContainer.innerHTML = `<strong>Примечание:</strong> ${poem.annotation}`;
+          if (poem.redacted.length > 0) {
+            const annotationContainer = document.getElementById("poemRedacted");
+            annotationContainer.innerHTML = `<strong>Стихотворение прошло прецедуру редактирования  ${poem.redacted}</strong>`;
             annotationContainer.style.display = "block";
           }
 
@@ -325,6 +340,14 @@
 
           // Загружаем текст стиха
           await loadPoemText("/deciptikon" + poem.base + poem.text);
+
+          // Отображаем аннотацию, если есть
+          if (poem.annotation) {
+            const annotationContainer =
+              document.getElementById("poemAnnotation");
+            annotationContainer.innerHTML = `<strong>Примечание:</strong> ${poem.annotation}`;
+            annotationContainer.style.display = "block";
+          }
         } catch (error) {
           console.error("Ошибка загрузки:", error);
           document.querySelector(".poetry-detail-header").innerHTML =
