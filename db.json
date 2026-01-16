@@ -103,6 +103,126 @@
 
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_i_am_a_thousand_consequences",
+      "name": "Я - тысяча следствий",
+      "type": "poetry",
+      "timeOfCreate": "24.03.18",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_Illusory_reality",
+      "name": "Иллюзорна реальность",
+      "type": "poetry",
+      "timeOfCreate": "05.02.18",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_deaths_are_one",
+      "name": "Смерти едины",
+      "type": "poetry",
+      "timeOfCreate": "30.01.18",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_moth",
+      "name": "Мотылёк",
+      "type": "poetry",
+      "timeOfCreate": "16. 02. 16",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_why_were_we_born",
+      "name": "Зачем рождены мы?",
+      "type": "poetry",
+      "timeOfCreate": "31. 12. 17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_an_alternate_eternity",
+      "name": "Альтернативная вечность",
+      "type": "poetry",
+      "timeOfCreate": "22. 11. 17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }

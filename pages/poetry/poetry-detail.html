@@ -288,9 +288,9 @@
         try {
           // Получаем ID стиха из URL
           const urlParams = new URLSearchParams(window.location.search);
-          const poemIndex = urlParams.get("poem");
+          const poemId = urlParams.get("poem");
 
-          if (poemIndex === null) {
+          if (poemId === null) {
             throw new Error("Стих не указан");
           }
 
@@ -299,11 +299,14 @@
           const data = await response.json();
           const poems = data.data.filter((item) => item.type === "poetry");
 
-          if (poemIndex >= poems.length) {
+          const poem = poems.filter((item) => item.id === poemId)[0];
+          console.log(poem);
+
+          if (!poem) {
             throw new Error("Стих не найден");
           }
 
-          const poem = poems[poemIndex];
+          //const poem = poems[poemId];
 
           // Заполняем информацию
           document.getElementById("poemTitle").textContent = poem.name;

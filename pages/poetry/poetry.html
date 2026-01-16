@@ -140,7 +140,6 @@
           poemCard.dataset.tags = poem.tags.join(" ");
 
           const imageUrl = poem.base + `${poem.id}/` + poem.img;
-          console.log("imageUrl", imageUrl);
 
           const illustrationUrl = poem.illustration
             ? poem.base + `${poem.id}/` + poem.illustration
@@ -151,7 +150,7 @@
                         <div class="poetry-card-overlay">
                             <div class="poetry-card-info">
                                 <span class="poetry-date">${
-                                  poem.timeOfPublication
+                                  poem.timeOfCreate
                                 }</span>
                                 ${
                                   poem.redacted.length !== 0
@@ -172,7 +171,9 @@
                               )
                               .join("")}
                         </div>
-                        <a href="/pages/poetry/poetry-detail.html?poem=${index}" class="btn read-btn">
+                        <a href="/pages/poetry/poetry-detail.html?poem=${
+                          poem.id
+                        }" class="btn read-btn">
                             <i class="fas fa-book-open"></i> Читать
                         </a>
                     </div>
