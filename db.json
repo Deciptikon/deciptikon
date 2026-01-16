@@ -169,7 +169,7 @@
       "id": "poetry_moth",
       "name": "Мотылёк",
       "type": "poetry",
-      "timeOfCreate": "16. 02. 16",
+      "timeOfCreate": "16.02.16",
       "timeOfPublication": "14.04.18",
       "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
 
@@ -189,7 +189,7 @@
       "id": "poetry_why_were_we_born",
       "name": "Зачем рождены мы?",
       "type": "poetry",
-      "timeOfCreate": "31. 12. 17",
+      "timeOfCreate": "31.12.17",
       "timeOfPublication": "14.04.18",
       "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
 
@@ -209,7 +209,107 @@
       "id": "poetry_an_alternate_eternity",
       "name": "Альтернативная вечность",
       "type": "poetry",
-      "timeOfCreate": "22. 11. 17",
+      "timeOfCreate": "22.11.17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_world_of_dreams",
+      "name": "Мир мечтаний",
+      "type": "poetry",
+      "timeOfCreate": "05.07.16",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_sacred",
+      "name": "Сакральный",
+      "type": "poetry",
+      "timeOfCreate": "16.10.16",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_world_is_doomed",
+      "name": "Мир обречён",
+      "type": "poetry",
+      "timeOfCreate": "21.11.17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_image_of_my_death",
+      "name": "Образ моей смерти",
+      "type": "poetry",
+      "timeOfCreate": "21.11.17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_choice",
+      "name": "Выбор",
+      "type": "poetry",
+      "timeOfCreate": "19.08.17",
       "timeOfPublication": "14.04.18",
       "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
 
