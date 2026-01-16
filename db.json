@@ -83,6 +83,26 @@
 
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_there_is_no_us",
+      "name": "Нас нет",
+      "type": "poetry",
+      "timeOfCreate": "27.03.18",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }
