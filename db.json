@@ -323,6 +323,106 @@
 
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_human",
+      "name": "Человек",
+      "type": "poetry",
+      "timeOfCreate": "22.07.17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_cry_of_the_universe",
+      "name": "Вопль мироздания",
+      "type": "poetry",
+      "timeOfCreate": "27.05.17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_eternal_darkness",
+      "name": "Вечный мрак",
+      "type": "poetry",
+      "timeOfCreate": "27.05.17",
+      "timeOfPublication": "14.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_pain",
+      "name": "Боль",
+      "type": "poetry",
+      "timeOfCreate": "05. 04. 18",
+      "timeOfPublication": "16.04.18",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_psychopath_rus",
+      "name": "Психопат",
+      "type": "poetry",
+      "timeOfCreate": "08.05.18",
+      "timeOfPublication": "10.05.2018",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }
