@@ -423,6 +423,26 @@
 
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_evolution_of_murder",
+      "name": "Эволюция убийства",
+      "type": "poetry",
+      "timeOfCreate": "14.06.18",
+      "timeOfPublication": "05.08.2018",
+      "tags": ["поэзия", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.gif",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "Пищаль - общее русское название ранних образцов средне- и длинноствольного огнестрельного оружия прицельной стрельбы. ",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }
