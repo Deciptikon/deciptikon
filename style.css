@@ -675,3 +675,66 @@ footer {
     padding-bottom: 10px;
   }
 }
+
+.poetry-sorting {
+  margin: 25px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-select {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  min-width: 220px;
+}
+
+.sort-direction {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.direction-btn {
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.direction-btn:hover {
+  background: #e9ecef;
+}
+
+.direction-btn.active {
+  background: #3498db;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .poetry-sorting {
+    justify-content: center;
+  }
+
+  .sort-controls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sort-select {
+    width: 100%;
+  }
+}

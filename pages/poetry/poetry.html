@@ -63,6 +63,33 @@
           </div>
         </div>
 
+        <div class="poetry-sorting">
+          <div class="sort-controls">
+            <select class="sort-select" id="sortSelect">
+              <option value="date">По дате</option>
+              <option value="title">По названию</option>
+              <option value="size">По размеру</option>
+              <option value="mood">По атмосфере</option>
+            </select>
+            <div class="sort-direction">
+              <button
+                class="direction-btn active"
+                data-direction="asc"
+                title="По убыванию"
+              >
+                <i class="fas fa-arrow-down-wide-short"></i>
+              </button>
+              <button
+                class="direction-btn"
+                data-direction="desc"
+                title="По возрастанию"
+              >
+                <i class="fas fa-arrow-up-wide-short"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
         <div class="poetry-grid" id="poetryGrid">
           <!-- Стихи будут загружены через JavaScript -->
           <div class="loading">Загрузка стихов...</div>
@@ -110,13 +137,24 @@
     </footer>
 
     <script>
+      // Глобальные переменные для хранения данных
+      let allPoems = [];
+      let filteredPoems = [];
+
       // Загрузка данных стихов
       async function loadPoetryData() {
         try {
           const response = await fetch("../../db.json");
           const data = await response.json();
-          displayPoetry(data.data.filter((item) => item.type === "poetry"));
-          setupFilters();
+
+          // Сохраняем все стихи в глобальную переменную
+          allPoems = data.data.filter((item) => item.type === "poetry");
+          filteredPoems = [...allPoems];
+
+          // Отображаем стихи и настраиваем сортировку
+          displayPoetry(filteredPoems);
+          setupSorting();
+          applySorting();
         } catch (error) {
           console.error("Ошибка загрузки данных:", error);
           document.getElementById("poetryGrid").innerHTML =
@@ -134,50 +172,41 @@
           return;
         }
 
-        poems.forEach((poem, index) => {
+        poems.forEach((poem) => {
           const poemCard = document.createElement("div");
           poemCard.className = "poetry-card";
           poemCard.dataset.tags = poem.tags.join(" ");
 
           const imageUrl = poem.base + `${poem.id}/` + poem.img;
 
-          const illustrationUrl = poem.illustration
-            ? poem.base + `${poem.id}/` + poem.illustration
-            : imageUrl;
-
           poemCard.innerHTML = `
-                    <div class="poetry-card-image" style="background-image: url('${imageUrl}')">
-                        <div class="poetry-card-overlay">
-                            <div class="poetry-card-info">
-                                <span class="poetry-date">${
-                                  poem.timeOfCreate
-                                }</span>
-                                ${
-                                  poem.redacted.length !== 0
-                                    ? '<span class="poetry-annotation-badge"><i class="fas fa-star"></i> Редакция</span>'
-                                    : ""
-                                }
-                            </div>
-                        </div>
-                    </div>
-                    <div class="poetry-card-content">
-                        <h3 class="poetry-title">${poem.name}</h3>
-                        <p class="poetry-overview">${poem.overview}</p>
-                        <div class="poetry-tags">
-                            ${poem.tags
-                              .map(
-                                (tag) =>
-                                  `<span class="poetry-tag">${tag}</span>`
-                              )
-                              .join("")}
-                        </div>
-                        <a href="/pages/poetry/poetry-detail.html?poem=${
-                          poem.id
-                        }" class="btn read-btn">
-                            <i class="fas fa-book-open"></i> Читать
-                        </a>
-                    </div>
-                `;
+      <div class="poetry-card-image" style="background-image: url('${imageUrl}')">
+        <div class="poetry-card-overlay">
+          <div class="poetry-card-info">
+            <span class="poetry-date">${poem.timeOfCreate}</span>
+            ${
+              poem.redacted.length !== 0
+                ? '<span class="poetry-annotation-badge"><i class="fas fa-star"></i> Редакция</span>'
+                : ""
+            }
+          </div>
+        </div>
+      </div>
+      <div class="poetry-card-content">
+        <h3 class="poetry-title">${poem.name}</h3>
+        <p class="poetry-overview">${poem.overview}</p>
+        <div class="poetry-tags">
+          ${poem.tags
+            .map((tag) => `<span class="poetry-tag">${tag}</span>`)
+            .join("")}
+        </div>
+        <a href="/pages/poetry/poetry-detail.html?poem=${
+          poem.id
+        }" class="btn read-btn">
+          <i class="fas fa-book-open"></i> Читать
+        </a>
+      </div>
+    `;
 
           grid.appendChild(poemCard);
         });
@@ -195,33 +224,153 @@
             this.classList.add("active");
 
             const selectedTag = this.dataset.tag;
-            filterPoems(selectedTag);
+            filterPoemsByTag(selectedTag);
           });
         });
       }
 
       // Фильтрация стихов по тегу
-      function filterPoems(tag) {
-        const poems = document.querySelectorAll(".poetry-card");
+      function filterPoemsByTag(tag) {
+        if (tag === "all") {
+          filteredPoems = [...allPoems];
+        } else {
+          filteredPoems = allPoems.filter((poem) =>
+            poem.tags.some(
+              (poemTag) => poemTag.toLowerCase() === tag.toLowerCase()
+            )
+          );
+        }
 
-        poems.forEach((poem) => {
-          if (tag === "all" || poem.dataset.tags.includes(tag)) {
-            poem.style.display = "block";
-          } else {
-            poem.style.display = "none";
-          }
+        // Применяем текущую сортировку к отфильтрованным стихам
+        applySorting();
+      }
+
+      // Настройка сортировки
+      function setupSorting() {
+        const sortSelect = document.getElementById("sortSelect");
+        const directionBtns = document.querySelectorAll(".direction-btn");
+
+        let currentCriteria = "date";
+        let currentDirection = "asc";
+
+        // Обработчик выбора критерия
+        sortSelect.addEventListener("change", function () {
+          currentCriteria = this.value;
+          applySorting();
         });
+
+        // Обработчик направления сортировки
+        directionBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            directionBtns.forEach((b) => b.classList.remove("active"));
+            this.classList.add("active");
+            currentDirection = this.dataset.direction;
+            applySorting();
+          });
+        });
+
+        // Функция для парсинга даты в формате "ДД.ММ.ГГГГ"
+        function parseCustomDate(dateStr) {
+          if (!dateStr) return new Date(0);
+
+          const parts = dateStr.split(".");
+          if (parts.length !== 3) return new Date(0);
+
+          const day = parseInt(parts[0], 10);
+          const month = parseInt(parts[1], 10) - 1;
+          const year = parseInt(parts[2], 10);
+
+          return new Date(year, month, day);
+        }
+
+        // Функция применения сортировки
+        function applySorting() {
+          // Создаем копию отфильтрованных стихов для сортировки
+          const sortedPoems = [...filteredPoems];
+
+          // Сортируем в зависимости от критерия
+          sortedPoems.sort((a, b) => {
+            let aValue, bValue;
+
+            switch (currentCriteria) {
+              case "date":
+                bValue = parseCustomDate(a.timeOfCreate);
+                aValue = parseCustomDate(b.timeOfCreate);
+                break;
+
+              case "title":
+                aValue = a.name.toLowerCase();
+                bValue = b.name.toLowerCase();
+                break;
+
+              case "size":
+                // Используем длину описания как показатель размера
+                // Если нужно точнее, можно добавить поле в БД
+                bValue = a.keySize;
+                aValue = b.keySize;
+                break;
+
+              case "mood":
+                // Веса для тегов по атмосферной тяжести
+                const moodWeights = {
+                  меланхолия: 3,
+                  страх: 4,
+                  смерть: 5,
+                  природа: 1,
+                };
+
+                aValue = a.tags.reduce(
+                  (sum, tag) => sum + (moodWeights[tag] || 0),
+                  0
+                );
+                bValue = b.tags.reduce(
+                  (sum, tag) => sum + (moodWeights[tag] || 0),
+                  0
+                );
+                break;
+
+              default:
+                return 0;
+            }
+
+            // Применяем направление сортировки
+            if (currentDirection === "asc") {
+              return aValue > bValue ? 1 : -1;
+            } else {
+              return aValue < bValue ? 1 : -1;
+            }
+          });
+
+          // Отображаем отсортированные стихи
+          displayPoetry(sortedPoems);
+        }
+
+        // Экспортируем функцию для использования в других местах
+        window.applySorting = applySorting;
       }
 
       // Загрузка данных при загрузке страницы
-      document.addEventListener("DOMContentLoaded", loadPoetryData);
+      document.addEventListener("DOMContentLoaded", () => {
+        loadPoetryData();
 
-      // Мобильное меню
-      document
-        .querySelector(".menu-toggle")
-        ?.addEventListener("click", function () {
-          document.querySelector(".nav-links").classList.toggle("active");
+        // Настраиваем фильтры
+        document.querySelectorAll(".tag-filter").forEach((button) => {
+          button.addEventListener("click", function () {
+            document
+              .querySelectorAll(".tag-filter")
+              .forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+            filterPoemsByTag(this.dataset.tag);
+          });
         });
+
+        // Мобильное меню
+        document
+          .querySelector(".menu-toggle")
+          ?.addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("active");
+          });
+      });
     </script>
   </body>
 </html>
