@@ -47,6 +47,63 @@
         border-left: 4px solid #fff200;
       }
 
+      /* Стили для аудиоплеера */
+      .audio-player-container {
+        margin: 30px 0;
+        text-align: center;
+        display: none; /* По умолчанию скрыт */
+      }
+
+      .audio-player-wrapper {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 15px;
+        padding: 25px;
+        max-width: 600px;
+        margin: 0 auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .audio-player-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      .audio-player-header i {
+        font-size: 1.5rem;
+      }
+
+      .audio-player-header h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .audio-player {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+      }
+
+      audio::-webkit-media-controls-panel {
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      audio::-webkit-media-controls-play-button {
+        background-color: #667eea;
+        border-radius: 50%;
+      }
+
+      audio::-webkit-media-controls-current-time-display,
+      audio::-webkit-media-controls-time-remaining-display {
+        color: #333;
+      }
+
       .poetry-annotation {
         background: #cbe5ff;
         padding: 15px;
@@ -150,6 +207,11 @@
         .poetry-text {
           font-size: 1.1rem;
           padding: 20px;
+        }
+
+        .audio-player-wrapper {
+          padding: 15px;
+          margin: 0 15px;
         }
       }
     </style>
@@ -276,6 +338,19 @@
           </div>
         </div>
 
+        <!-- Блок с плеером (будет показан только если есть аудио) -->
+        <div class="audio-player-container" id="audioPlayerContainer">
+          <div class="audio-player-wrapper">
+            <div class="audio-player-header">
+              <i class="fas fa-headphones"></i>
+              <h3>Озвучка стиха</h3>
+            </div>
+            <audio class="audio-player" id="poemAudioPlayer" controls>
+              <p>Ваш браузер не поддерживает элемент audio.</p>
+            </audio>
+          </div>
+        </div>
+
         <div
           class="poetry-annotation"
           id="poemAnnotation"
@@ -365,7 +440,7 @@
             .map((tag) => `<span class="poetry-tag">${tag}</span>`)
             .join("");
 
-          // Отображаем аннотацию, если есть
+          // Отображаем редактуру
           if (poem.redacted.length > 0) {
             const annotationContainer = document.getElementById("poemRedacted");
             annotationContainer.innerHTML = `<strong>Стихотворение прошло прецедуру редактирования  ${poem.redacted}</strong>`;
@@ -380,6 +455,14 @@
 
           // Загружаем текст стиха
           await loadPoemText(poem.base + `${poem.id}/` + poem.text);
+
+          if (poem.sound) {
+            const audioPlayer = document.getElementById("poemAudioPlayer");
+            const audioUrl = poem.base + `${poem.id}/` + poem.sound;
+            audioPlayer.src = audioUrl;
+            document.getElementById("audioPlayerContainer").style.display =
+              "block";
+          }
 
           // Отображаем аннотацию, если есть
           if (poem.annotation) {
