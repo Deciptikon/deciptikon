@@ -96,6 +96,8 @@
         <div class="poetry-filters">
           <div class="filter-tags">
             <button class="tag-filter active" data-tag="all">Все</button>
+            <button class="tag-filter" data-tag="мрачные">Мрачные</button>
+            <button class="tag-filter" data-tag="не мрачные">Не мрачные</button>
             <button class="tag-filter" data-tag="природа">Природа</button>
             <button class="tag-filter" data-tag="меланхолия">Меланхолия</button>
             <button class="tag-filter" data-tag="страх">Страх</button>
@@ -226,7 +228,12 @@
             <span class="poetry-date">${poem.timeOfCreate}</span>
             ${
               poem.redacted.length !== 0
-                ? '<span class="poetry-annotation-badge"><i class="fas fa-star"></i> Редакция</span>'
+                ? '<span class="poetry-redacted-badge"><i class="fas fa-gem"></i></span>'
+                : ""
+            }
+            ${
+              poem.sound.length !== 0
+                ? '<span class="poetry-sound-badge"><i class="fas fa-volume-up"></i></span>'
                 : ""
             }
           </div>
@@ -344,8 +351,6 @@
                 break;
 
               case "size":
-                // Используем длину описания как показатель размера
-                // Если нужно точнее, можно добавить поле в БД
                 bValue = a.keySize;
                 aValue = b.keySize;
                 break;
