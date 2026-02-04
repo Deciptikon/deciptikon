@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/social-likes/dist/social-likes_flat.css"
+    />
     <style>
       /* Дополнительные стили для страницы деталей */
       .poetry-detail {
@@ -215,7 +219,136 @@
           margin: 0 15px;
         }
       }
+      /* Стили для социальных кнопок */
+      .social-buttons {
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .social-buttons button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        color: white;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .social-buttons button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+      }
+
+      .social-buttons button:active {
+        transform: translateY(-1px);
+      }
+
+      /* Скрываем текст кнопок, оставляем только иконки */
+      .social-buttons button {
+        font-size: 0;
+      }
+
+      .social-buttons button::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 22px;
+      }
+
+      /* Стили для VK */
+
+      .vk::before {
+        content: none;
+      }
+
+      /* Добавляем фоновую картинку */
+      .vk {
+        background: #4c75a3 url("/pages/poetry/social_button/vk.png") no-repeat
+          center center;
+        background-size: 24px 24px;
+      }
+
+      /* Сохраняем градиент на hover */
+      .vk:hover {
+        background: #5d88c0 url("/pages/poetry/social_button/vk.png") no-repeat
+          center center;
+        background-size: 24px 24px;
+      }
+
+      /* Стили для Pinterest */
+      .pinterest::before {
+        content: none;
+      }
+
+      .pinterest {
+        background: #bd081c url("/pages/poetry/social_button/pinterest.png")
+          no-repeat center center;
+        background-size: 24px 24px;
+      }
+
+      .pinterest:hover {
+        background: #e60023 url("/pages/poetry/social_button/pinterest.png")
+          no-repeat center center;
+        background-size: 24px 24px;
+      }
+
+      /* Адаптивность для мобильных устройств */
+      @media (max-width: 768px) {
+        .social-buttons {
+          right: 0px;
+          padding: 8px;
+          gap: 8px;
+          top: 60%;
+          border-radius: 15px;
+        }
+
+        .social-buttons button {
+          width: 45px;
+          height: 45px;
+        }
+
+        .social-buttons button::before {
+          font-size: 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .social-buttons {
+          right: 2px;
+          padding: 2px;
+          gap: 2px;
+          top: 70%;
+        }
+
+        .social-buttons button {
+          width: 40px;
+          height: 40px;
+        }
+
+        .social-buttons button::before {
+          font-size: 18px;
+        }
+      }
     </style>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -261,6 +394,11 @@
         /></div
     ></noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <!-- /Social Likes widget -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/social-likes/dist/social-likes.min.js"></script>
+    <!-- /Social Likes widget -->
   </head>
   <body>
     <!-- Навигация -->
@@ -339,6 +477,21 @@
           </div>
         </div>
 
+        <div class="social-buttons">
+          <button id="vk" class="vk" data-share="vk" title="Поделиться в VK">
+            VK
+          </button>
+          <button
+            id="pinterest"
+            class="pinterest"
+            data-share="pinterest"
+            data-media="image.jpg"
+            title="Поделиться в Pinterest"
+          >
+            Pinterest
+          </button>
+        </div>
+
         <!-- Блок с плеером (будет показан только если есть аудио) -->
         <div class="audio-player-container" id="audioPlayerContainer">
           <div class="audio-player-wrapper">
@@ -400,6 +553,52 @@
     </footer>
 
     <script>
+      const socialConfig = {
+        facebook: {
+          popupUrl: "https://www.facebook.com/sharer/sharer.php?u={url}",
+          popupWidth: 600,
+          popupHeight: 359,
+        },
+        twitter: {
+          popupUrl: "https://twitter.com/intent/tweet?url={url}&text={title}",
+          popupWidth: 600,
+          popupHeight: 250,
+          click: function (title) {
+            // Добавляем двоеточие, если его нет в конце
+            return /[.?:\-–—]\s*$/.test(title) ? title : title + ":";
+          },
+        },
+        mailru: {
+          popupUrl:
+            "https://connect.mail.ru/share?share_url={url}&title={title}",
+          popupWidth: 492,
+          popupHeight: 500,
+        },
+        vkontakte: {
+          popupUrl: "https://vk.com/share.php?url={url}&title={title}",
+          popupWidth: 655,
+          popupHeight: 450,
+        },
+        odnoklassniki: {
+          popupUrl:
+            "https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&service=odnoklassniki&st.shareUrl={url}",
+          popupWidth: 580,
+          popupHeight: 336,
+        },
+        plusone: {
+          popupUrl: "https://plus.google.com/share?url={url}",
+          popupWidth: 500,
+          popupHeight: 550,
+        },
+        pinterest: {
+          popupUrl:
+            "https://pinterest.com/pin/create/button/?url={url}&description={title}",
+          popupWidth: 740,
+          popupHeight: 550,
+        },
+      };
+
+      let illustrationUrl = "";
       async function loadPoemDetail() {
         try {
           // Получаем ID стиха из URL
@@ -449,7 +648,7 @@
           }
 
           // Загружаем иллюстрацию
-          const illustrationUrl = poem.illustration
+          illustrationUrl = poem.illustration
             ? poem.base + `${poem.id}/` + poem.illustration
             : poem.base + `${poem.id}/` + poem.img;
           document.getElementById("poemIllustration").src = illustrationUrl;
@@ -525,6 +724,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         loadPoemDetail();
         setupContentSwitcher();
+        initSocialButtons();
       });
 
       // Мобильное меню
@@ -533,6 +733,68 @@
         ?.addEventListener("click", function () {
           document.querySelector(".nav-links").classList.toggle("active");
         });
+
+      // Общая функция для шаринга
+      function shareToSocial(platform, url, title, media = "") {
+        const config = socialConfig[platform];
+
+        if (!config) {
+          console.error(`Платформа ${platform} не найдена`);
+          return;
+        }
+
+        // Обрабатываем title если есть функция click
+        let finalTitle = title;
+        if (config.click && typeof config.click === "function") {
+          finalTitle = config.click(title);
+        }
+
+        // Заменяем плейсхолдеры в URL
+        let shareUrl = config.popupUrl
+          .replace("{url}", encodeURIComponent(url))
+          .replace("{title}", encodeURIComponent(finalTitle))
+          .replace("{description}", encodeURIComponent(finalTitle));
+
+        // Для Pinterest добавляем медиа
+        if (platform === "pinterest" && media) {
+          shareUrl += `&media=${encodeURIComponent(media)}`;
+        }
+
+        // Открываем попап
+        const left = (screen.width - config.popupWidth) / 2;
+        const top = (screen.height - config.popupHeight) / 2;
+
+        window.open(
+          shareUrl,
+          `${platform}_share`,
+          `width=${config.popupWidth},height=${config.popupHeight},left=${left},top=${top},resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no`
+        );
+      }
+
+      // Инициализация обработчиков для кнопок
+      function initSocialButtons() {
+        const currentUrl = window.location.href;
+        const currentTitle = document.title;
+
+        document.getElementById("vk")?.addEventListener("click", function (e) {
+          e.preventDefault();
+          shareToSocial("vkontakte", currentUrl, currentTitle);
+        });
+
+        document
+          .getElementById("pinterest")
+          ?.addEventListener("click", function (e) {
+            e.preventDefault();
+            console.log(mediaUrl);
+
+            shareToSocial(
+              "pinterest",
+              currentUrl,
+              currentTitle,
+              "https://deciptikon.ru" + illustrationUrl
+            );
+          });
+      }
     </script>
   </body>
 </html>

@@ -1,9 +1,7 @@
-// Активация мобильного меню
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
-  // Переключение меню
   menuToggle.addEventListener("click", function () {
     navLinks.classList.toggle("active");
     const icon = menuToggle.querySelector("i");
@@ -16,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Закрытие меню при клике на ссылку
   document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("active");
@@ -26,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Плавная анимация для кнопок
   document.querySelectorAll(".btn").forEach((button) => {
     button.addEventListener("mouseenter", function (e) {
       const x = e.pageX - this.offsetLeft;
@@ -45,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Анимация появления элементов при прокрутке
   const observerOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -50px 0px",
@@ -59,12 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, observerOptions);
 
-  // Наблюдаем за элементами с классом "feature"
   document.querySelectorAll(".feature").forEach((el) => {
     observer.observe(el);
   });
 
-  // Добавляем небольшой эффект для логотипа
   const logo = document.querySelector(".logo");
   logo.addEventListener("mouseenter", () => {
     logo.style.transform = "scale(1.05)";
@@ -74,9 +67,4 @@ document.addEventListener("DOMContentLoaded", function () {
   logo.addEventListener("mouseleave", () => {
     logo.style.transform = "scale(1)";
   });
-
-  // Консольное сообщение для разработчика
-  console.log(
-    "Заглавная страница загружена. Вы можете легко изменить её содержимое в файлах HTML, CSS и JS."
-  );
 });
