@@ -332,6 +332,40 @@
         background-size: 24px 24px;
       }
 
+      /* Стили для Telegram */
+      .tg::before {
+        content: none;
+      }
+
+      .tg {
+        background: #23a0db url("/pages/poetry/social_button/tg.png") no-repeat
+          center center;
+        background-size: 24px 24px;
+      }
+
+      .tg:hover {
+        background: #27acea url("/pages/poetry/social_button/tg.png") no-repeat
+          center center;
+        background-size: 24px 24px;
+      }
+
+      /* Стили для Odnoklassniki */
+      .ok::before {
+        content: none;
+      }
+
+      .ok {
+        background: #e56c02 url("/pages/poetry/social_button/ok.png") no-repeat
+          center center;
+        background-size: 24px 24px;
+      }
+
+      .ok:hover {
+        background: #fa7c0e url("/pages/poetry/social_button/ok.png") no-repeat
+          center center;
+        background-size: 24px 24px;
+      }
+
       /* Адаптивность для мобильных устройств */
       @media (max-width: 768px) {
         .social-buttons {
@@ -500,6 +534,12 @@
         </div>
 
         <div class="social-buttons">
+          <button id="ok" class="ok" data-share="ok" title="Поделиться в OK">
+            OK
+          </button>
+          <button id="tg" class="tg" data-share="tg" title="Поделиться в TG">
+            TG
+          </button>
           <button id="vk" class="vk" data-share="vk" title="Поделиться в VK">
             VK
           </button>
@@ -507,7 +547,7 @@
             id="pinterest"
             class="pinterest"
             data-share="pinterest"
-            data-media="image.jpg"
+            data-media="https://deciptikon.ru/preview-image.png"
             title="Поделиться в Pinterest"
           >
             Pinterest
@@ -576,41 +616,27 @@
 
     <script>
       const socialConfig = {
-        facebook: {
-          popupUrl: "https://www.facebook.com/sharer/sharer.php?u={url}",
-          popupWidth: 600,
-          popupHeight: 359,
-        },
-        twitter: {
-          popupUrl: "https://twitter.com/intent/tweet?url={url}&text={title}",
-          popupWidth: 600,
-          popupHeight: 250,
-          click: function (title) {
-            // Добавляем двоеточие, если его нет в конце
-            return /[.?:\-–—]\s*$/.test(title) ? title : title + ":";
-          },
-        },
         mailru: {
           popupUrl:
             "https://connect.mail.ru/share?share_url={url}&title={title}",
           popupWidth: 492,
           popupHeight: 500,
         },
-        vkontakte: {
+
+        ok: {
+          popupUrl: "https://connect.ok.ru/offer?url={url}&title={title}",
+          popupWidth: 655,
+          popupHeight: 450,
+        },
+        vk: {
           popupUrl: "https://vk.com/share.php?url={url}&title={title}",
           popupWidth: 655,
           popupHeight: 450,
         },
-        odnoklassniki: {
-          popupUrl:
-            "https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&service=odnoklassniki&st.shareUrl={url}",
+        tg: {
+          popupUrl: "https://t.me/share/url?url={url}&text={title}",
           popupWidth: 580,
           popupHeight: 336,
-        },
-        plusone: {
-          popupUrl: "https://plus.google.com/share?url={url}",
-          popupWidth: 500,
-          popupHeight: 550,
         },
         pinterest: {
           popupUrl:
@@ -796,11 +822,22 @@
       // Инициализация обработчиков для кнопок
       function initSocialButtons() {
         const currentUrl = window.location.href;
-        const currentTitle = document.title;
+
+        document.getElementById("ok")?.addEventListener("click", function (e) {
+          e.preventDefault();
+          console.log(currentUrl);
+
+          shareToSocial("ok", currentUrl, document.title);
+        });
+
+        document.getElementById("tg")?.addEventListener("click", function (e) {
+          e.preventDefault();
+          shareToSocial("tg", currentUrl, document.title);
+        });
 
         document.getElementById("vk")?.addEventListener("click", function (e) {
           e.preventDefault();
-          shareToSocial("vkontakte", currentUrl, currentTitle);
+          shareToSocial("vk", currentUrl, document.title);
         });
 
         document
@@ -811,7 +848,7 @@
             shareToSocial(
               "pinterest",
               currentUrl,
-              currentTitle,
+              document.title,
               "https://deciptikon.ru" + illustrationUrl
             );
           });
