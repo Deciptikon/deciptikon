@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -428,17 +428,17 @@
             return;
           }
         }
-        (k = e.createElement(t)),
+        ((k = e.createElement(t)),
           (a = e.getElementsByTagName(t)[0]),
           (k.async = 1),
           (k.src = r),
-          a.parentNode.insertBefore(k, a);
+          a.parentNode.insertBefore(k, a));
       })(
         window,
         document,
         "script",
         "https://mc.yandex.ru/metrika/tag.js?id=106304486",
-        "ym"
+        "ym",
       );
 
       ym(106304486, "init", {
@@ -460,10 +460,9 @@
     ></noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <!-- /Social Likes widget -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/social-likes/dist/social-likes.min.js"></script>
-    <!-- /Social Likes widget -->
+    <!-- /pinterest widget -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <!-- /pinterest widget -->
   </head>
   <body>
     <!-- Навигация -->
@@ -687,9 +686,8 @@
             poem.timeOfCreate;
           document.getElementById("publishedDate").textContent =
             poem.timeOfPublication;
-          document.getElementById(
-            "poemOverview"
-          ).innerHTML = `<p class="poetry-overview">${poem.overview}</p>`;
+          document.getElementById("poemOverview").innerHTML =
+            `<p class="poetry-overview">${poem.overview}</p>`;
 
           // Отображаем теги
           const tagsContainer = document.getElementById("poemTags");
@@ -753,7 +751,7 @@
       function setupContentSwitcher() {
         const buttons = document.querySelectorAll(".content-btn");
         const illustrationContainer = document.getElementById(
-          "illustrationContainer"
+          "illustrationContainer",
         );
         const textContainer = document.getElementById("textContainer");
 
@@ -824,7 +822,7 @@
         window.open(
           shareUrl,
           `${platform}_share`,
-          `width=${config.popupWidth},height=${config.popupHeight},left=${left},top=${top},resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no`
+          `width=${config.popupWidth},height=${config.popupHeight},left=${left},top=${top},resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no`,
         );
       }
 
@@ -853,13 +851,22 @@
           .getElementById("pinterest")
           ?.addEventListener("click", function (e) {
             e.preventDefault();
-
+            if (window.PinUtils) {
+              PinUtils.pinOne({
+                media: "https://deciptikon.ru" + illustrationUrl,
+                url: currentUrl,
+                description: document.title,
+              });
+            } else {
+              console.error("PinUtils не загружен");
+            }
+            /**
             shareToSocial(
               "pinterest",
               currentUrl,
               document.title,
-              "https://deciptikon.ru" + illustrationUrl
-            );
+              "https://deciptikon.ru" + illustrationUrl,
+            );*/
           });
       }
     </script>
