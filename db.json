@@ -731,6 +731,48 @@
 
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_posthuman",
+      "name": "Постчеловек",
+      "type": "poetry",
+      "timeOfCreate": "29.10.2018",
+      "timeOfPublication": "29.11.2018",
+      "keySize": 402,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_transhumanism",
+      "name": "Трансгуманизм",
+      "type": "poetry",
+      "timeOfCreate": "30.11.2018",
+      "timeOfPublication": "30.11.2018",
+      "keySize": 701,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }
