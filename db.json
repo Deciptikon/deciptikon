@@ -773,6 +773,111 @@
 
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_painful_thing_of_all_is_death",
+      "name": "Больнее всех, возможно, смерти",
+      "type": "poetry",
+      "timeOfCreate": "09.10.2018",
+      "timeOfPublication": "01.12.2018",
+      "keySize": 692,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_light_of_truth",
+      "name": "Свет истины",
+      "type": "poetry",
+      "timeOfCreate": "01.12.2018",
+      "timeOfPublication": "10.12.2018",
+      "keySize": 454,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_deadborn",
+      "name": "Мертворожденный",
+      "type": "poetry",
+      "timeOfCreate": "10.12.2018",
+      "timeOfPublication": "10.12.2018",
+      "keySize": 404,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_disappointment",
+      "name": "Разочарование",
+      "type": "poetry",
+      "timeOfCreate": "07.12.2018",
+      "timeOfPublication": "12.12.2018",
+      "keySize": 237,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_era_of_formation",
+      "name": "Эра становления",
+      "type": "poetry",
+      "timeOfCreate": "15.12.2018",
+      "timeOfPublication": "15.12.2018",
+      "keySize": 221,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }
