@@ -878,6 +878,174 @@
 
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_last_alarm",
+      "name": "Последняя тревога",
+      "type": "poetry",
+      "timeOfCreate": "19.12.2018",
+      "timeOfPublication": "19.12.2018",
+      "keySize": 414,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_forgotten",
+      "name": "Забвенный",
+      "type": "poetry",
+      "timeOfCreate": "21.12.2018",
+      "timeOfPublication": "22.12.2018",
+      "keySize": 462,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_citizens_of_the_world",
+      "name": "Граждане Мира",
+      "type": "poetry",
+      "timeOfCreate": "23.03.2020",
+      "timeOfPublication": "23.03.2020",
+      "keySize": 326,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_world_has_never_seen_any_other_fate",
+      "name": "Иной судьбы не видел мир",
+      "type": "poetry",
+      "timeOfCreate": "16.07.2020",
+      "timeOfPublication": "13.12.2020",
+      "keySize": 322,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_you_too",
+      "name": "Ты тоже?..",
+      "type": "poetry",
+      "timeOfCreate": "21.08.2020",
+      "timeOfPublication": "30.01.2021",
+      "keySize": 447,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_logo",
+      "name": "Логос",
+      "type": "poetry",
+      "timeOfCreate": "08.01.2021",
+      "timeOfPublication": "23.03.2021",
+      "keySize": 314,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "Забавный факт... в этом стихотворении ровно 314 символов... что символично соответствует первым 3 цифрам десятичного представления числа π (пи) в метрике L2. ",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_samsaras_apogee",
+      "name": "Сансары апогей",
+      "type": "poetry",
+      "timeOfCreate": "13.04.2021",
+      "timeOfPublication": "14.04.2021",
+      "keySize": 295,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "<br />Сансара — это круг перерождений, полный страданий. <br />Апогей — это наивысшая точка. <br />Дукха — неудовлетворённость, боль, непостоянство, отсутствие «Я».",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_truth_is_wordless",
+      "name": "Истина бессловесна",
+      "type": "poetry",
+      "timeOfCreate": "18.04.2021",
+      "timeOfPublication": "19.04.2021",
+      "keySize": 366,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }
