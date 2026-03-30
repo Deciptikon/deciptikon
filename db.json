@@ -1046,6 +1046,216 @@
 
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_we_dont_know",
+      "name": "Мы не знаем",
+      "type": "poetry",
+      "timeOfCreate": "01.05.2021",
+      "timeOfPublication": "02.05.2021",
+      "keySize": 310,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_an_alien_world",
+      "name": "Чуждый мир",
+      "type": "poetry",
+      "timeOfCreate": "16.03.2021",
+      "timeOfPublication": "06.05.2021",
+      "keySize": 401,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_there_is_no_shame",
+      "name": "Стыда нет",
+      "type": "poetry",
+      "timeOfCreate": "28.03.2021",
+      "timeOfPublication": "06.05.2021",
+      "keySize": 210,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_futility_of_striving",
+      "name": "Тщетность стремлений",
+      "type": "poetry",
+      "timeOfCreate": "14.05.2021",
+      "timeOfPublication": "20.05.2021",
+      "keySize": 550,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_world_is_unknown",
+      "name": "Мир неизвестен",
+      "type": "poetry",
+      "timeOfCreate": "27.05.2021",
+      "timeOfPublication": "28.05.2021",
+      "keySize": 313,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_the_defect",
+      "name": "Дефект",
+      "type": "poetry",
+      "timeOfCreate": "31.05.2021",
+      "timeOfPublication": "08.06.2021",
+      "keySize": 335,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_hail_of_villages",
+      "name": "Град деревень",
+      "type": "poetry",
+      "timeOfCreate": "05.11.2022",
+      "timeOfPublication": "05.11.2022",
+      "keySize": 230,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_paradise_is_where_it_is_higher",
+      "name": "Рай там, где выше",
+      "type": "poetry",
+      "timeOfCreate": "20.11.2023",
+      "timeOfPublication": "20.11.2023",
+      "keySize": 336,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_an_ode_to_my_determination",
+      "name": "Ода моей решимости",
+      "type": "poetry",
+      "timeOfCreate": "28.05.2024",
+      "timeOfPublication": "28.05.2024",
+      "keySize": 631,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+
+    {
+      "id": "poetry_are_you_alive_my_friend",
+      "name": "Ты жив, друг мой?",
+      "type": "poetry",
+      "timeOfCreate": "01.06.2024",
+      "timeOfPublication": "01.06.2024",
+      "keySize": 358,
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
+
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "illustration.png",
+      "sound": "",
+
+      "overview": "",
+
+      "annotation": "Это стихотворение написано к (восьмой) годовщине гибели моего друга, Земскова Романа, с которым мы были знакомы 6 замечательных лет. Я не смог приехать на его похороны и до сего времени не был ни разу на его могиле и более того, я не уверен что смогу когда-то там появиться... это слишком невыносимо для меня. Периодически я вижусь с ним во сне.",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }
