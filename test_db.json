@@ -8,12 +8,7 @@
       "timeOfCreate": "05.03.2025",
       "timeOfPublication": "04.06.2025",
       "keySize": 262,
-      "tags": [
-        "не мрачные",
-        "природа",
-        "восторг",
-        "меланхолия"
-      ],
+      "tags": ["не мрачные", "природа", "восторг", "меланхолия"],
       "base": "/pages/poetry/",
       "img": "image.webp",
       "text": "text.txt",
@@ -30,13 +25,7 @@
       "timeOfCreate": "27.12.2025",
       "timeOfPublication": "27.12.2025",
       "keySize": 437,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть"
-      ],
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
       "base": "/pages/poetry/",
       "img": "image.jpg",
       "text": "text.txt",
@@ -53,13 +42,7 @@
       "timeOfCreate": "21.11.2017",
       "timeOfPublication": "14.04.2018",
       "keySize": 344,
-      "tags": [
-        "мрачные",
-        "отчаяние",
-        "страх",
-        "меланхолия",
-        "смерть"
-      ],
+      "tags": ["мрачные", "отчаяние", "страх", "меланхолия", "смерть"],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
@@ -76,13 +59,7 @@
       "timeOfCreate": "12.04.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 359,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть"
-      ],
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
@@ -99,13 +76,7 @@
       "timeOfCreate": "27.03.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 413,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть"
-      ],
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
@@ -122,13 +93,7 @@
       "timeOfCreate": "24.03.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 291,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть"
-      ],
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
@@ -145,12 +110,7 @@
       "timeOfCreate": "05.02.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 305,
-      "tags": [
-        "мрачные",
-        "страх",
-        "меланхолия",
-        "смерть"
-      ],
+      "tags": ["мрачные", "страх", "меланхолия", "смерть"],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
@@ -167,13 +127,7 @@
       "timeOfCreate": "30.01.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 382,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть"
-      ],
+      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
@@ -206,23 +160,6 @@
       "overview": "",
       "annotation": "",
       "redacted": "Коваленко М.Е."
-    },
-    {
-      "id": "poetry_new_1777138740025",
-      "name": "Новое стихотворение333333",
-      "type": "poetry",
-      "timeOfCreate": "25.04.2026",
-      "timeOfPublication": "",
-      "keySize": 0,
-      "tags": [],
-      "base": "/pages/poetry/",
-      "img": "",
-      "text": "text.txt",
-      "illustration": "",
-      "sound": "",
-      "overview": "",
-      "annotation": "",
-      "redacted": ""
     }
   ]
 }
