@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+#sidebar {
+  width: 33.333%;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f7f7f7;
+}
+
+#sidebar ul {
+  list-style: none;
+}
+
+#sidebar li {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+#sidebar li:hover {
+  background: #e0e0e0;
+}
+
+#sidebar li.active {
+  background: #2196f3;
+  color: white;
+}
+
+#main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 2px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#tags-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.tag {
+  background: #ddd;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+/* Модальное окно подтверждения */
+#modal-overlay {
+  display: none; /* по умолчанию скрыто, показывается через JS */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+.btn-ok {
+  background: #f44336;
+  color: white;
+  border-color: #d32f2f;
+}
+.btn-ok:hover {
+  background: #d32f2f;
+}

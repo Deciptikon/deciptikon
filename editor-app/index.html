@@ -2,11 +2,35 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Редактор БД v0.0</title>
+    <title>Редактор БД v1.1</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Редактор БД</h1>
-    <div id="list"></div>
+    <div id="sidebar">
+      <h3>Стихи</h3>
+      <ul id="poem-list"></ul>
+      <button id="add-poem" style="margin-top: 10px; width: 100%">
+        + Добавить стих
+      </button>
+    </div>
+
+    <div id="main">
+      <div id="detail">
+        <p>Выберите стих слева</p>
+      </div>
+    </div>
+
+    <!-- Модальное подтверждение -->
+    <div id="modal-overlay">
+      <div class="modal-box">
+        <p id="modal-message"></p>
+        <div class="modal-buttons">
+          <button class="btn btn-ok" id="modal-ok">Да</button>
+          <button class="btn btn-cancel" id="modal-cancel">Отмена</button>
+        </div>
+      </div>
+    </div>
+
     <script src="renderer.js"></script>
   </body>
 </html>

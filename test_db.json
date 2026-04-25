@@ -1,9 +1,5 @@
 {
-  "meta": {
-    "autor": "Бычков Дмитрий",
-    "time": null
-  },
-
+  "meta": {},
   "data": [
     {
       "id": "poetry_first_snow",
@@ -12,20 +8,21 @@
       "timeOfCreate": "05.03.2025",
       "timeOfPublication": "04.06.2025",
       "keySize": 262,
-      "tags": ["не мрачные", "природа", "восторг", "меланхолия"],
-
+      "tags": [
+        "не мрачные",
+        "природа",
+        "восторг",
+        "меланхолия"
+      ],
       "base": "/pages/poetry/",
       "img": "image.webp",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",
-
       "overview": "Занятный стих о зиме, я пытался сделать некоторые фразы перетекающими между предложениями...",
-
       "annotation": "Почти не изменное стихотворение",
       "redacted": ""
     },
-
     {
       "id": "poetry_the_oldest_curse",
       "name": "Древнейшее проклятие",
@@ -33,20 +30,22 @@
       "timeOfCreate": "27.12.2025",
       "timeOfPublication": "27.12.2025",
       "keySize": 437,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
+      "tags": [
+        "мрачные",
+        "проклятие",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
       "base": "/pages/poetry/",
       "img": "image.jpg",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",
-
       "overview": "Стих о неизбежности и том как я её ощущаю... таких стихов много, потому что это чувство не отпускает",
-
       "annotation": "Этот стих был написан за один вечер)))",
       "redacted": "Коваленко М.Е."
     },
-
     {
       "id": "poetry_existence",
       "name": "Экзистенция",
@@ -54,20 +53,22 @@
       "timeOfCreate": "21.11.2017",
       "timeOfPublication": "14.04.2018",
       "keySize": 344,
-      "tags": ["мрачные", "отчаяние", "страх", "меланхолия", "смерть"],
-
+      "tags": [
+        "мрачные",
+        "отчаяние",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",
-
       "overview": "",
-
       "annotation": "",
       "redacted": "Коваленко М.Е."
     },
-
     {
       "id": "poetry_moment",
       "name": "Мгновение",
@@ -75,20 +76,22 @@
       "timeOfCreate": "12.04.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 359,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
+      "tags": [
+        "мрачные",
+        "проклятие",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",
-
       "overview": "",
-
       "annotation": "",
       "redacted": "Коваленко М.Е."
     },
-
     {
       "id": "poetry_there_is_no_us",
       "name": "Нас нет",
@@ -96,20 +99,22 @@
       "timeOfCreate": "27.03.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 413,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
+      "tags": [
+        "мрачные",
+        "проклятие",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",
-
       "overview": "",
-
       "annotation": "",
       "redacted": "Коваленко М.Е."
     },
-
     {
       "id": "poetry_i_am_a_thousand_consequences",
       "name": "Я - тысяча следствий",
@@ -117,20 +122,22 @@
       "timeOfCreate": "24.03.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 291,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
+      "tags": [
+        "мрачные",
+        "проклятие",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",
-
       "overview": "",
-
       "annotation": "",
       "redacted": "Коваленко М.Е."
     },
-
     {
       "id": "poetry_Illusory_reality",
       "name": "Иллюзорна реальность",
@@ -138,20 +145,21 @@
       "timeOfCreate": "05.02.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 305,
-      "tags": ["мрачные", "страх", "меланхолия", "смерть"],
-
+      "tags": [
+        "мрачные",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",
-
       "overview": "",
-
       "annotation": "",
       "redacted": "Коваленко М.Е."
     },
-
     {
       "id": "poetry_the_deaths_are_one",
       "name": "Смерти едины",
@@ -159,20 +167,22 @@
       "timeOfCreate": "30.01.2018",
       "timeOfPublication": "14.04.2018",
       "keySize": 382,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
+      "tags": [
+        "мрачные",
+        "проклятие",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "",
-
       "overview": "",
-
       "annotation": "",
       "redacted": "Коваленко М.Е."
     },
-
     {
       "id": "poetry_moth",
       "name": "Мотылёк",
@@ -188,1074 +198,31 @@
         "смерть",
         "слушать"
       ],
-
       "base": "/pages/poetry/",
       "img": "image.gif",
       "text": "text.txt",
       "illustration": "illustration.png",
       "sound": "sound.mp3",
-
       "overview": "",
-
       "annotation": "",
       "redacted": "Коваленко М.Е."
     },
-
     {
-      "id": "poetry_why_were_we_born",
-      "name": "Зачем рождены мы?",
+      "id": "poetry_new_1777138740025",
+      "name": "Новое стихотворение333333",
       "type": "poetry",
-      "timeOfCreate": "31.12.2017",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 292,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
+      "timeOfCreate": "25.04.2026",
+      "timeOfPublication": "",
+      "keySize": 0,
+      "tags": [],
       "base": "/pages/poetry/",
-      "img": "image.gif",
+      "img": "",
       "text": "text.txt",
-      "illustration": "illustration.png",
+      "illustration": "",
       "sound": "",
-
       "overview": "",
-
       "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_an_alternate_eternity",
-      "name": "Альтернативная вечность",
-      "type": "poetry",
-      "timeOfCreate": "22.11.2017",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 346,
-      "tags": ["не мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_world_of_dreams",
-      "name": "Мир мечтаний",
-      "type": "poetry",
-      "timeOfCreate": "05.07.2016",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 523,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_sacred",
-      "name": "Сакральный",
-      "type": "poetry",
-      "timeOfCreate": "16.10.2016",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 335,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_world_is_doomed",
-      "name": "Мир обречён",
-      "type": "poetry",
-      "timeOfCreate": "21.11.2017",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 322,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_image_of_my_death",
-      "name": "Образ моей смерти",
-      "type": "poetry",
-      "timeOfCreate": "21.11.2017",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 363,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_choice",
-      "name": "Выбор",
-      "type": "poetry",
-      "timeOfCreate": "19.08.2017",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 284,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_human",
-      "name": "Человек",
-      "type": "poetry",
-      "timeOfCreate": "22.07.2017",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 271,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_cry_of_the_universe",
-      "name": "Вопль мироздания",
-      "type": "poetry",
-      "timeOfCreate": "27.05.2017",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 333,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_eternal_darkness",
-      "name": "Вечный мрак",
-      "type": "poetry",
-      "timeOfCreate": "27.05.2017",
-      "timeOfPublication": "14.04.2018",
-      "keySize": 332,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_pain",
-      "name": "Боль",
-      "type": "poetry",
-      "timeOfCreate": "05.04.2018",
-      "timeOfPublication": "16.04.2018",
-      "keySize": 421,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_psychopath_rus",
-      "name": "Психопат",
-      "type": "poetry",
-      "timeOfCreate": "08.05.2018",
-      "timeOfPublication": "10.05.2018",
-      "keySize": 592,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть",
-        "слушать"
-      ],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "sound.mp3",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_evolution_of_murder",
-      "name": "Эволюция убийства",
-      "type": "poetry",
-      "timeOfCreate": "14.06.2018",
-      "timeOfPublication": "05.08.2018",
-      "keySize": 458,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть",
-        "слушать"
-      ],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "sound.mp3",
-
-      "overview": "",
-
-      "annotation": "Пищаль - общее русское название ранних образцов средне- и длинноствольного огнестрельного оружия прицельной стрельбы. ",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_i_am_dust",
-      "name": "Я - прах",
-      "type": "poetry",
-      "timeOfCreate": "06.08.2018",
-      "timeOfPublication": "18.08.2018",
-      "keySize": 712,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть",
-        "слушать"
-      ],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "sound.mp3",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_contradictions",
-      "name": "Противоречия",
-      "type": "poetry",
-      "timeOfCreate": "27.08.2018",
-      "timeOfPublication": "27.08.2018",
-      "keySize": 332,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_pain_of_eternity",
-      "name": "Боль вечности",
-      "type": "poetry",
-      "timeOfCreate": "04.09.2018",
-      "timeOfPublication": "04.09.2018",
-      "keySize": 477,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_one_who_forgot",
-      "name": "Та, что забыла",
-      "type": "poetry",
-      "timeOfCreate": "26.05.2018",
-      "timeOfPublication": "07.09.2018",
-      "keySize": 430,
-      "tags": ["мрачные", "страх", "меланхолия", "любовь"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_veil_of_death",
-      "name": "Вуаль смерти",
-      "type": "poetry",
-      "timeOfCreate": "05.01.2017",
-      "timeOfPublication": "08.09.2018",
-      "keySize": 289,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_loyalty",
-      "name": "Преданность",
-      "type": "poetry",
-      "timeOfCreate": "08.09.2018",
-      "timeOfPublication": "08.09.2018",
-      "keySize": 425,
-      "tags": ["не мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_veni_vidi_vici",
-      "name": "Veni, vidi, vici",
-      "type": "poetry",
-      "timeOfCreate": "09.09.2018",
-      "timeOfPublication": "09.09.2018",
-      "keySize": 305,
-      "tags": ["не мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_resolve",
-      "name": "Воля",
-      "type": "poetry",
-      "timeOfCreate": "29.09.2018",
-      "timeOfPublication": "29.09.2018",
-      "keySize": 438,
-      "tags": ["не мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_living_for_an_idea",
-      "name": "Жизнь за идею",
-      "type": "poetry",
-      "timeOfCreate": "30.09.2018",
-      "timeOfPublication": "30.09.2018",
-      "keySize": 502,
-      "tags": ["не мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_a_path_paved_with_death",
-      "name": "Мощёный смертью путь",
-      "type": "poetry",
-      "timeOfCreate": "16.11.2018",
-      "timeOfPublication": "16.11.2018",
-      "keySize": 440,
-      "tags": [
-        "мрачные",
-        "проклятие",
-        "страх",
-        "меланхолия",
-        "смерть",
-        "слушать"
-      ],
-
-      "base": "/pages/poetry/",
-      "img": "image.gif",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "sound.mp3",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_nihilists_path",
-      "name": "Путь нигилиста",
-      "type": "poetry",
-      "timeOfCreate": "18.11.2018",
-      "timeOfPublication": "18.11.2018",
-      "keySize": 802,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_posthuman",
-      "name": "Постчеловек",
-      "type": "poetry",
-      "timeOfCreate": "29.10.2018",
-      "timeOfPublication": "29.11.2018",
-      "keySize": 402,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_transhumanism",
-      "name": "Трансгуманизм",
-      "type": "poetry",
-      "timeOfCreate": "30.11.2018",
-      "timeOfPublication": "30.11.2018",
-      "keySize": 701,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_painful_thing_of_all_is_death",
-      "name": "Больнее всех, возможно, смерти",
-      "type": "poetry",
-      "timeOfCreate": "09.10.2018",
-      "timeOfPublication": "01.12.2018",
-      "keySize": 692,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_light_of_truth",
-      "name": "Свет истины",
-      "type": "poetry",
-      "timeOfCreate": "01.12.2018",
-      "timeOfPublication": "10.12.2018",
-      "keySize": 454,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_deadborn",
-      "name": "Мертворожденный",
-      "type": "poetry",
-      "timeOfCreate": "10.12.2018",
-      "timeOfPublication": "10.12.2018",
-      "keySize": 404,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_disappointment",
-      "name": "Разочарование",
-      "type": "poetry",
-      "timeOfCreate": "07.12.2018",
-      "timeOfPublication": "12.12.2018",
-      "keySize": 237,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_era_of_formation",
-      "name": "Эра становления",
-      "type": "poetry",
-      "timeOfCreate": "15.12.2018",
-      "timeOfPublication": "15.12.2018",
-      "keySize": 221,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "sound.mp3",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_last_alarm",
-      "name": "Последняя тревога",
-      "type": "poetry",
-      "timeOfCreate": "19.12.2018",
-      "timeOfPublication": "19.12.2018",
-      "keySize": 414,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_forgotten",
-      "name": "Забвенный",
-      "type": "poetry",
-      "timeOfCreate": "21.12.2018",
-      "timeOfPublication": "22.12.2018",
-      "keySize": 462,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_citizens_of_the_world",
-      "name": "Граждане Мира",
-      "type": "poetry",
-      "timeOfCreate": "23.03.2020",
-      "timeOfPublication": "23.03.2020",
-      "keySize": 326,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_world_has_never_seen_any_other_fate",
-      "name": "Иной судьбы не видел мир",
-      "type": "poetry",
-      "timeOfCreate": "16.07.2020",
-      "timeOfPublication": "13.12.2020",
-      "keySize": 322,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_you_too",
-      "name": "Ты тоже?..",
-      "type": "poetry",
-      "timeOfCreate": "21.08.2020",
-      "timeOfPublication": "30.01.2021",
-      "keySize": 447,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_logo",
-      "name": "Логос",
-      "type": "poetry",
-      "timeOfCreate": "08.01.2021",
-      "timeOfPublication": "23.03.2021",
-      "keySize": 314,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "Забавный факт... в этом стихотворении ровно 314 символов... что символично соответствует первым 3 цифрам десятичного представления числа π (пи) в метрике L2. ",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_samsaras_apogee",
-      "name": "Сансары апогей",
-      "type": "poetry",
-      "timeOfCreate": "13.04.2021",
-      "timeOfPublication": "14.04.2021",
-      "keySize": 295,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "<br />Сансара — это круг перерождений, полный страданий. <br />Апогей — это наивысшая точка. <br />Дукха — неудовлетворённость, боль, непостоянство, отсутствие «Я».",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_truth_is_wordless",
-      "name": "Истина бессловесна",
-      "type": "poetry",
-      "timeOfCreate": "18.04.2021",
-      "timeOfPublication": "19.04.2021",
-      "keySize": 366,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_we_dont_know",
-      "name": "Мы не знаем",
-      "type": "poetry",
-      "timeOfCreate": "01.05.2021",
-      "timeOfPublication": "02.05.2021",
-      "keySize": 310,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_an_alien_world",
-      "name": "Чуждый мир",
-      "type": "poetry",
-      "timeOfCreate": "16.03.2021",
-      "timeOfPublication": "06.05.2021",
-      "keySize": 401,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_there_is_no_shame",
-      "name": "Стыда нет",
-      "type": "poetry",
-      "timeOfCreate": "28.03.2021",
-      "timeOfPublication": "06.05.2021",
-      "keySize": 210,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_futility_of_striving",
-      "name": "Тщетность стремлений",
-      "type": "poetry",
-      "timeOfCreate": "14.05.2021",
-      "timeOfPublication": "20.05.2021",
-      "keySize": 550,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_world_is_unknown",
-      "name": "Мир неизвестен",
-      "type": "poetry",
-      "timeOfCreate": "27.05.2021",
-      "timeOfPublication": "28.05.2021",
-      "keySize": 313,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_the_defect",
-      "name": "Дефект",
-      "type": "poetry",
-      "timeOfCreate": "31.05.2021",
-      "timeOfPublication": "08.06.2021",
-      "keySize": 335,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_hail_of_villages",
-      "name": "Град деревень",
-      "type": "poetry",
-      "timeOfCreate": "05.11.2022",
-      "timeOfPublication": "05.11.2022",
-      "keySize": 230,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_paradise_is_where_it_is_higher",
-      "name": "Рай там, где выше",
-      "type": "poetry",
-      "timeOfCreate": "20.11.2023",
-      "timeOfPublication": "20.11.2023",
-      "keySize": 336,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_an_ode_to_my_determination",
-      "name": "Ода моей решимости",
-      "type": "poetry",
-      "timeOfCreate": "28.05.2024",
-      "timeOfPublication": "28.05.2024",
-      "keySize": 631,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "",
-      "redacted": "Коваленко М.Е."
-    },
-
-    {
-      "id": "poetry_are_you_alive_my_friend",
-      "name": "Ты жив, друг мой?",
-      "type": "poetry",
-      "timeOfCreate": "01.06.2024",
-      "timeOfPublication": "01.06.2024",
-      "keySize": 358,
-      "tags": ["мрачные", "проклятие", "страх", "меланхолия", "смерть"],
-
-      "base": "/pages/poetry/",
-      "img": "image.jpg",
-      "text": "text.txt",
-      "illustration": "illustration.png",
-      "sound": "",
-
-      "overview": "",
-
-      "annotation": "Это стихотворение написано к (восьмой) годовщине гибели моего друга, Земскова Романа, с которым мы были знакомы 6 замечательных лет. Я не смог приехать на его похороны и до сего времени не был ни разу на его могиле и более того, я не уверен что смогу когда-то там появиться... это слишком невыносимо для меня. Периодически я вижусь с ним во сне.",
-      "redacted": "Коваленко М.Е."
+      "redacted": ""
     }
   ]
 }

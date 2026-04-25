@@ -1,26 +1,10 @@
-const { contextBridge } = require("electron");
-const fs = require("fs");
-const path = require("path");
-
-// Путь к вашему JSON относительно папки editor-app
-const DATA_PATH = path.join(__dirname, "..", "test_db.json");
+const { contextBridge, ipcRenderer } = require("electron");
 
 contextBridge.exposeInMainWorld("api", {
-  loadData: () => {
-    try {
-      const raw = fs.readFileSync(DATA_PATH, "utf-8");
-      return JSON.parse(raw);
-    } catch (e) {
-      console.error("Ошибка чтения data.json:", e);
-      return { meta: {}, data: [] };
-    }
-  },
-  saveData: (jsonObject) => {
-    try {
-      fs.writeFileSync(DATA_PATH, JSON.stringify(jsonObject, null, 2), "utf-8");
-      return { success: true };
-    } catch (e) {
-      return { success: false, error: e.message };
-    }
-  },
+  loadDB: () => ipcRenderer.invoke("load-db"),
+  saveData: (json) => ipcRenderer.invoke("save-data", json),
+  createFolder: (folderPath) => ipcRenderer.invoke("create-folder", folderPath),
+  renameFolder: (oldPath, newPath) =>
+    ipcRenderer.invoke("rename-folder", oldPath, newPath),
+  deleteFolder: (folderPath) => ipcRenderer.invoke("delete-folder", folderPath),
 });
