@@ -3,9 +3,11 @@ const path = require("path");
 const fs = require("fs");
 
 // Путь к тестовой БД
-const DB_PATH = path.join(__dirname, "..", "db.json");
+const DB_PATH = path.join(__dirname, "..", "db.json")
+console.log("DB_PATH = ", DB_PATH);
+
 // Корень проекта
-const ROOT_DIR = path.join(__dirname, "..");
+const ROOT_DIR = path.join(__dirname, "..")
 
 // Проверка безопасности пути
 function isSafePath(targetPath) {
@@ -23,7 +25,7 @@ function createWindow() {
       nodeIntegration: false,
     },
   });
-  // Menu.setApplicationMenu(null);  // раскомментируй, когда понадобится
+  Menu.setApplicationMenu(null);
   win.loadFile("index.html");
 }
 

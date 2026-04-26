@@ -1402,6 +1402,94 @@
       "overview": "",
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+    {
+      "id": "poetry_we_tried",
+      "name": "Мы пытались",
+      "type": "poetry",
+      "timeOfCreate": "23.01.2025",
+      "timeOfPublication": "23.01.2025",
+      "keySize": 579,
+      "tags": [
+        "мрачные",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "",
+      "sound": "",
+      "overview": "",
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+    {
+      "id": "poetry_everything_will_pass",
+      "name": "Всё пройдёт",
+      "type": "poetry",
+      "timeOfCreate": "05.03.2025",
+      "timeOfPublication": "07.03.2025",
+      "keySize": 356,
+      "tags": [
+        "мрачные",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "",
+      "sound": "",
+      "overview": "",
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+    {
+      "id": "poetry_who_am_i",
+      "name": "Кто Я?",
+      "type": "poetry",
+      "timeOfCreate": "26.05.2025",
+      "timeOfPublication": "26.05.2025",
+      "keySize": 914,
+      "tags": [
+        "мрачные",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
+      "base": "/pages/poetry/",
+      "img": "",
+      "text": "text.txt",
+      "illustration": "",
+      "sound": "",
+      "overview": "",
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
+    },
+    {
+      "id": "poetry_to_meet_the_wind",
+      "name": "На встречу ветру",
+      "type": "poetry",
+      "timeOfCreate": "26.05.2025",
+      "timeOfPublication": "03.10.2025",
+      "keySize": 303,
+      "tags": [
+        "мрачные",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "",
+      "sound": "",
+      "overview": "",
+      "annotation": "",
+      "redacted": "Коваленко М.Е."
     }
   ]
 }
