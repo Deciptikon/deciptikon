@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 // Путь к тестовой БД
-const DB_PATH = path.join(__dirname, "..", "test_db.json");
+const DB_PATH = path.join(__dirname, "..", "db.json");
 // Корень проекта
 const ROOT_DIR = path.join(__dirname, "..");
 
