@@ -1,1 +1,4 @@
 .vscode/settings.json
+editor-app-build/win-unpacked
+editor-app-build/builder-debug.yml
+editor-app-build/builder-effective-config.yaml
