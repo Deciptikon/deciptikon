@@ -2,8 +2,16 @@ const { app, BrowserWindow, Menu, ipcMain } = require("electron");
 const path = require("path");
 const fs = require("fs");
 
-const DB_PATH = "../test_db.json"; //path.join(__dirname, "..", "test_db.json"); // <-- путь к твоей тестовой БД
+// Путь к тестовой БД
+const DB_PATH = path.join(__dirname, "..", "test_db.json");
+// Корень проекта
 const ROOT_DIR = path.join(__dirname, "..");
+
+// Проверка безопасности пути
+function isSafePath(targetPath) {
+  const resolved = path.resolve(targetPath);
+  return resolved.startsWith(ROOT_DIR);
+}
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -15,30 +23,24 @@ function createWindow() {
       nodeIntegration: false,
     },
   });
-
-  // Menu.setApplicationMenu(null);  // раскомментируешь позже
+  // Menu.setApplicationMenu(null);  // раскомментируй, когда понадобится
   win.loadFile("index.html");
 }
 
-// IPC-обработчики для операций с БД и папками
+// === IPC: БД ===
 ipcMain.handle("load-db", async () => {
   try {
-    console.log("load... DB");
-
+    console.log("Загрузка БД из", DB_PATH);
     if (!fs.existsSync(DB_PATH)) return { meta: {}, data: [] };
     const raw = fs.readFileSync(DB_PATH, "utf-8");
-    const db = JSON.parse(raw);
-
-    console.log(db);
-
-    return db;
+    return JSON.parse(raw);
   } catch (e) {
     console.error(e);
     return { meta: {}, data: [] };
   }
 });
 
-ipcMain.handle("save-data", async (event, jsonObject) => {
+ipcMain.handle("save-db", async (event, jsonObject) => {
   try {
     fs.writeFileSync(DB_PATH, JSON.stringify(jsonObject, null, 2), "utf-8");
     return { success: true };
@@ -47,13 +49,13 @@ ipcMain.handle("save-data", async (event, jsonObject) => {
   }
 });
 
+// === IPC: папки ===
 ipcMain.handle("create-folder", async (event, folderPath) => {
   try {
     const absPath = path.isAbsolute(folderPath)
       ? folderPath
       : path.join(ROOT_DIR, folderPath);
-    if (!absPath.startsWith(ROOT_DIR))
-      throw new Error("Путь вне допустимой области");
+    if (!isSafePath(absPath)) throw new Error("Путь вне допустимой области");
     if (!fs.existsSync(absPath)) {
       fs.mkdirSync(absPath, { recursive: true });
       return { success: true };
@@ -72,7 +74,7 @@ ipcMain.handle("rename-folder", async (event, oldPath, newPath) => {
     const absNew = path.isAbsolute(newPath)
       ? newPath
       : path.join(ROOT_DIR, newPath);
-    if (!absOld.startsWith(ROOT_DIR) || !absNew.startsWith(ROOT_DIR))
+    if (!isSafePath(absOld) || !isSafePath(absNew))
       throw new Error("Выход за пределы");
     fs.renameSync(absOld, absNew);
     return { success: true };
@@ -86,8 +88,32 @@ ipcMain.handle("delete-folder", async (event, folderPath) => {
     const absPath = path.isAbsolute(folderPath)
       ? folderPath
       : path.join(ROOT_DIR, folderPath);
-    if (!absPath.startsWith(ROOT_DIR)) throw new Error("Выход за пределы");
+    if (!isSafePath(absPath)) throw new Error("Выход за пределы");
     fs.rmSync(absPath, { recursive: true, force: true });
+    return { success: true };
+  } catch (e) {
+    return { success: false, error: e.message };
+  }
+});
+
+// === IPC: текст ===
+ipcMain.handle("read-text-file", async (event, relativePath) => {
+  try {
+    const fullPath = path.join(ROOT_DIR, relativePath);
+    if (!fullPath.startsWith(ROOT_DIR)) throw new Error("Недопустимый путь");
+    if (!fs.existsSync(fullPath)) return "";
+    return fs.readFileSync(fullPath, "utf-8");
+  } catch (e) {
+    console.error(e);
+    return "";
+  }
+});
+
+ipcMain.handle("write-text-file", async (event, relativePath, content) => {
+  try {
+    const fullPath = path.join(ROOT_DIR, relativePath);
+    if (!fullPath.startsWith(ROOT_DIR)) throw new Error("Недопустимый путь");
+    fs.writeFileSync(fullPath, content, "utf-8");
     return { success: true };
   } catch (e) {
     return { success: false, error: e.message };

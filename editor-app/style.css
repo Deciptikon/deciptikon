@@ -138,3 +138,37 @@ button {
 .btn-ok:hover {
   background: #d32f2f;
 }
+
+/* Таблица медиафайлов */
+.media-table {
+  margin-top: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.media-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.media-table .media-label {
+  font-weight: bold;
+  font-size: 0.95em;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.media-table input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Чекбокс: крупнее и оранжевый */
+.media-table input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #ff9800; /* оранжевый маркер (работает в Chromium) */
+  cursor: pointer;
+  margin: 0;
+}
