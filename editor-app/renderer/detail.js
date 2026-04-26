@@ -51,6 +51,13 @@ function renderDetail(poem, textContent) {
     <input type="text" id="edit-tags" value="${poem.tags.join(", ")}">
     <div id="tags-display">${tagsHtml}</div>
 
+    <!-- Текст стиха -->
+    <label>Текст стиха</label>
+    <textarea id="edit-text" style="height:200px;">${escapeHtml(textContent)}</textarea>
+    <div style="margin-top:4px; font-size:0.9em; color:#555;">
+      Размер: <span id="char-count">${countSymbols(textContent)}</span> символов
+    </div>
+
     <label>Обзор</label>
     <textarea id="edit-overview">${escapeHtml(poem.overview || "")}</textarea>
 
@@ -78,13 +85,6 @@ function renderDetail(poem, textContent) {
         <td style="text-align:center;"><input type="checkbox" id="has-sound" ${poem.sound ? "checked" : ""}></td>
       </tr>
     </table>
-
-    <!-- Текст стиха -->
-    <label>Текст стиха</label>
-    <textarea id="edit-text" style="height:200px;">${escapeHtml(textContent)}</textarea>
-    <div style="margin-top:4px; font-size:0.9em; color:#555;">
-      Размер: <span id="char-count">${textContent.length}</span> символов
-    </div>
 
     <div class="actions">
       <button id="save-poem">💾 Сохранить</button>
@@ -158,8 +158,9 @@ function renderDetail(poem, textContent) {
   // Подсчёт символов текста
   const textarea = document.getElementById("edit-text");
   const charCountSpan = document.getElementById("char-count");
+  charCountSpan.textContent = countSymbols(textarea.value); // начальное значение
   textarea.addEventListener("input", () => {
-    charCountSpan.textContent = textarea.value.length;
+    charCountSpan.textContent = countSymbols(textarea.value);
   });
 
   // Кнопки действий

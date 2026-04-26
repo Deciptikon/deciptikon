@@ -43,7 +43,8 @@ async function saveCurrentPoem(originalPoem) {
   updated.timeOfPublication = formatDate(
     document.getElementById("edit-timePub").value,
   );
-  updated.keySize = document.getElementById("edit-text").value.length; // авто
+  updated.keySize =
+    parseInt(document.getElementById("char-count").textContent) || 0;
   updated.tags = document
     .getElementById("edit-tags")
     .value.split(",")
@@ -111,10 +112,10 @@ async function addNewPoem() {
     id: PREFIX + Date.now(),
     name: "Новое стихотворение",
     type: "poetry",
-    timeOfCreate: new Date().toLocaleDateString("ru-RU"),
+    timeOfCreate: "",
     timeOfPublication: "",
     keySize: 0,
-    tags: [],
+    tags: ["мрачные", "страх", "меланхолия", "смерть"],
     base: "/pages/poetry/",
     img: "",
     text: "text.txt",
@@ -122,7 +123,7 @@ async function addNewPoem() {
     sound: "",
     overview: "",
     annotation: "",
-    redacted: "",
+    redacted: "Коваленко М.Е.",
   };
 
   const folderPath = getFolderPath(newPoem);

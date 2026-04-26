@@ -106,3 +106,13 @@ function formatDate(dateStr) {
   // Если структура не соответствует, возвращаем очищенную строку
   return cleaned;
 }
+
+/**
+ * Подсчитывает количество символов в строке (включая пробелы и переносы).
+ * В будущем может учитывать специальные правила.
+ * @param {string} str
+ * @returns {number}
+ */
+function countSymbols(str) {
+  return str.length;
+}
