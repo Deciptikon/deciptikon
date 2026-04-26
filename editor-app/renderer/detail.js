@@ -71,17 +71,17 @@ function renderDetail(poem, textContent) {
     <table class="media-table">
       <tr>
         <td class="media-label">Изображение</td>
-        <td><input type="text" id="edit-img" value="${escapeHtml(poem.img || "image.png")}" placeholder="image.png"></td>
+        <td><input type="text" id="edit-img" value="${escapeHtml(poem.img)}" placeholder="image.png"></td>
         <td style="text-align:center;"><input type="checkbox" id="has-img" ${poem.img ? "checked" : ""}></td>
       </tr>
       <tr>
         <td class="media-label">Иллюстрация</td>
-        <td><input type="text" id="edit-illustration" value="${escapeHtml(poem.illustration || "illustration.png")}" placeholder="illustration.png"></td>
+        <td><input type="text" id="edit-illustration" value="${escapeHtml(poem.illustration)}" placeholder="illustration.png"></td>
         <td style="text-align:center;"><input type="checkbox" id="has-illustration" ${poem.illustration ? "checked" : ""}></td>
       </tr>
       <tr>
         <td class="media-label">Звук</td>
-        <td><input type="text" id="edit-sound" value="${escapeHtml(poem.sound || "sound.mp3")}" placeholder="sound.mp3"></td>
+        <td><input type="text" id="edit-sound" value="${escapeHtml(poem.sound)}" placeholder="sound.mp3"></td>
         <td style="text-align:center;"><input type="checkbox" id="has-sound" ${poem.sound ? "checked" : ""}></td>
       </tr>
     </table>

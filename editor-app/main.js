@@ -30,7 +30,6 @@ function createWindow() {
 // === IPC: БД ===
 ipcMain.handle("load-db", async () => {
   try {
-    console.log("Загрузка БД из", DB_PATH);
     if (!fs.existsSync(DB_PATH)) return { meta: {}, data: [] };
     const raw = fs.readFileSync(DB_PATH, "utf-8");
     return JSON.parse(raw);
