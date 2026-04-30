@@ -7,7 +7,7 @@
       "type": "poetry",
       "timeOfCreate": "05.03.2025",
       "timeOfPublication": "04.06.2025",
-      "keySize": 262,
+      "keySize": 192,
       "tags": [
         "не мрачные",
         "природа",
@@ -29,7 +29,7 @@
       "type": "poetry",
       "timeOfCreate": "27.12.2025",
       "timeOfPublication": "27.12.2025",
-      "keySize": 437,
+      "keySize": 327,
       "tags": [
         "мрачные",
         "проклятие",
@@ -52,7 +52,7 @@
       "type": "poetry",
       "timeOfCreate": "21.11.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 344,
+      "keySize": 283,
       "tags": [
         "мрачные",
         "отчаяние",
@@ -75,7 +75,7 @@
       "type": "poetry",
       "timeOfCreate": "12.04.2018",
       "timeOfPublication": "14.04.2018",
-      "keySize": 359,
+      "keySize": 299,
       "tags": [
         "мрачные",
         "проклятие",
@@ -98,7 +98,7 @@
       "type": "poetry",
       "timeOfCreate": "27.03.2018",
       "timeOfPublication": "14.04.2018",
-      "keySize": 413,
+      "keySize": 341,
       "tags": [
         "мрачные",
         "проклятие",
@@ -121,7 +121,7 @@
       "type": "poetry",
       "timeOfCreate": "24.03.2018",
       "timeOfPublication": "14.04.2018",
-      "keySize": 291,
+      "keySize": 238,
       "tags": [
         "мрачные",
         "проклятие",
@@ -139,12 +139,12 @@
       "redacted": "Коваленко М.Е."
     },
     {
-      "id": "poetry_Illusory_reality",
+      "id": "poetry_illusory_reality",
       "name": "Иллюзорна реальность",
       "type": "poetry",
       "timeOfCreate": "05.02.2018",
       "timeOfPublication": "14.04.2018",
-      "keySize": 305,
+      "keySize": 250,
       "tags": [
         "мрачные",
         "страх",
@@ -166,7 +166,7 @@
       "type": "poetry",
       "timeOfCreate": "30.01.2018",
       "timeOfPublication": "14.04.2018",
-      "keySize": 382,
+      "keySize": 316,
       "tags": [
         "мрачные",
         "проклятие",
@@ -189,7 +189,7 @@
       "type": "poetry",
       "timeOfCreate": "16.02.2016",
       "timeOfPublication": "14.04.2018",
-      "keySize": 587,
+      "keySize": 487,
       "tags": [
         "мрачные",
         "проклятие",
@@ -213,7 +213,7 @@
       "type": "poetry",
       "timeOfCreate": "31.12.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 292,
+      "keySize": 233,
       "tags": [
         "мрачные",
         "проклятие",
@@ -236,7 +236,7 @@
       "type": "poetry",
       "timeOfCreate": "22.11.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 346,
+      "keySize": 288,
       "tags": [
         "не мрачные",
         "проклятие",
@@ -259,7 +259,7 @@
       "type": "poetry",
       "timeOfCreate": "05.07.2016",
       "timeOfPublication": "14.04.2018",
-      "keySize": 523,
+      "keySize": 430,
       "tags": [
         "мрачные",
         "проклятие",
@@ -282,7 +282,7 @@
       "type": "poetry",
       "timeOfCreate": "16.10.2016",
       "timeOfPublication": "14.04.2018",
-      "keySize": 335,
+      "keySize": 273,
       "tags": [
         "мрачные",
         "проклятие",
@@ -305,7 +305,7 @@
       "type": "poetry",
       "timeOfCreate": "21.11.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 322,
+      "keySize": 270,
       "tags": [
         "мрачные",
         "проклятие",
@@ -328,7 +328,7 @@
       "type": "poetry",
       "timeOfCreate": "21.11.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 363,
+      "keySize": 310,
       "tags": [
         "мрачные",
         "проклятие",
@@ -351,7 +351,7 @@
       "type": "poetry",
       "timeOfCreate": "19.08.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 284,
+      "keySize": 243,
       "tags": [
         "мрачные",
         "проклятие",
@@ -374,7 +374,7 @@
       "type": "poetry",
       "timeOfCreate": "22.07.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 271,
+      "keySize": 231,
       "tags": [
         "мрачные",
         "проклятие",
@@ -397,7 +397,7 @@
       "type": "poetry",
       "timeOfCreate": "27.05.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 333,
+      "keySize": 280,
       "tags": [
         "мрачные",
         "проклятие",
@@ -420,7 +420,7 @@
       "type": "poetry",
       "timeOfCreate": "27.05.2017",
       "timeOfPublication": "14.04.2018",
-      "keySize": 332,
+      "keySize": 276,
       "tags": [
         "мрачные",
         "проклятие",
@@ -443,7 +443,7 @@
       "type": "poetry",
       "timeOfCreate": "05.04.2018",
       "timeOfPublication": "16.04.2018",
-      "keySize": 421,
+      "keySize": 345,
       "tags": [
         "мрачные",
         "проклятие",
@@ -466,7 +466,7 @@
       "type": "poetry",
       "timeOfCreate": "08.05.2018",
       "timeOfPublication": "10.05.2018",
-      "keySize": 592,
+      "keySize": 490,
       "tags": [
         "мрачные",
         "проклятие",
@@ -490,7 +490,7 @@
       "type": "poetry",
       "timeOfCreate": "14.06.2018",
       "timeOfPublication": "05.08.2018",
-      "keySize": 458,
+      "keySize": 388,
       "tags": [
         "мрачные",
         "проклятие",
@@ -514,7 +514,7 @@
       "type": "poetry",
       "timeOfCreate": "06.08.2018",
       "timeOfPublication": "18.08.2018",
-      "keySize": 712,
+      "keySize": 433,
       "tags": [
         "мрачные",
         "проклятие",
@@ -538,7 +538,7 @@
       "type": "poetry",
       "timeOfCreate": "27.08.2018",
       "timeOfPublication": "27.08.2018",
-      "keySize": 332,
+      "keySize": 281,
       "tags": [
         "мрачные",
         "проклятие",
@@ -561,7 +561,7 @@
       "type": "poetry",
       "timeOfCreate": "04.09.2018",
       "timeOfPublication": "04.09.2018",
-      "keySize": 477,
+      "keySize": 397,
       "tags": [
         "мрачные",
         "проклятие",
@@ -584,7 +584,7 @@
       "type": "poetry",
       "timeOfCreate": "26.05.2018",
       "timeOfPublication": "07.09.2018",
-      "keySize": 430,
+      "keySize": 344,
       "tags": [
         "мрачные",
         "страх",
@@ -606,7 +606,7 @@
       "type": "poetry",
       "timeOfCreate": "05.01.2017",
       "timeOfPublication": "08.09.2018",
-      "keySize": 289,
+      "keySize": 244,
       "tags": [
         "мрачные",
         "проклятие",
@@ -629,7 +629,7 @@
       "type": "poetry",
       "timeOfCreate": "08.09.2018",
       "timeOfPublication": "08.09.2018",
-      "keySize": 425,
+      "keySize": 356,
       "tags": [
         "не мрачные",
         "проклятие",
@@ -652,7 +652,7 @@
       "type": "poetry",
       "timeOfCreate": "09.09.2018",
       "timeOfPublication": "09.09.2018",
-      "keySize": 305,
+      "keySize": 256,
       "tags": [
         "не мрачные",
         "проклятие",
@@ -675,7 +675,7 @@
       "type": "poetry",
       "timeOfCreate": "29.09.2018",
       "timeOfPublication": "29.09.2018",
-      "keySize": 438,
+      "keySize": 361,
       "tags": [
         "не мрачные",
         "проклятие",
@@ -698,7 +698,7 @@
       "type": "poetry",
       "timeOfCreate": "30.09.2018",
       "timeOfPublication": "30.09.2018",
-      "keySize": 502,
+      "keySize": 413,
       "tags": [
         "не мрачные",
         "проклятие",
@@ -721,7 +721,7 @@
       "type": "poetry",
       "timeOfCreate": "16.11.2018",
       "timeOfPublication": "16.11.2018",
-      "keySize": 440,
+      "keySize": 363,
       "tags": [
         "мрачные",
         "проклятие",
@@ -745,7 +745,7 @@
       "type": "poetry",
       "timeOfCreate": "18.11.2018",
       "timeOfPublication": "18.11.2018",
-      "keySize": 802,
+      "keySize": 675,
       "tags": [
         "мрачные",
         "проклятие",
@@ -768,7 +768,7 @@
       "type": "poetry",
       "timeOfCreate": "29.10.2018",
       "timeOfPublication": "29.11.2018",
-      "keySize": 402,
+      "keySize": 334,
       "tags": [
         "мрачные",
         "проклятие",
@@ -791,7 +791,7 @@
       "type": "poetry",
       "timeOfCreate": "30.11.2018",
       "timeOfPublication": "30.11.2018",
-      "keySize": 701,
+      "keySize": 586,
       "tags": [
         "мрачные",
         "проклятие",
@@ -814,7 +814,7 @@
       "type": "poetry",
       "timeOfCreate": "09.10.2018",
       "timeOfPublication": "01.12.2018",
-      "keySize": 692,
+      "keySize": 575,
       "tags": [
         "мрачные",
         "проклятие",
@@ -837,7 +837,7 @@
       "type": "poetry",
       "timeOfCreate": "01.12.2018",
       "timeOfPublication": "10.12.2018",
-      "keySize": 454,
+      "keySize": 374,
       "tags": [
         "мрачные",
         "проклятие",
@@ -860,7 +860,7 @@
       "type": "poetry",
       "timeOfCreate": "10.12.2018",
       "timeOfPublication": "10.12.2018",
-      "keySize": 404,
+      "keySize": 325,
       "tags": [
         "мрачные",
         "проклятие",
@@ -883,7 +883,7 @@
       "type": "poetry",
       "timeOfCreate": "07.12.2018",
       "timeOfPublication": "12.12.2018",
-      "keySize": 237,
+      "keySize": 192,
       "tags": [
         "мрачные",
         "проклятие",
@@ -906,7 +906,7 @@
       "type": "poetry",
       "timeOfCreate": "15.12.2018",
       "timeOfPublication": "15.12.2018",
-      "keySize": 221,
+      "keySize": 356,
       "tags": [
         "мрачные",
         "проклятие",
@@ -929,7 +929,7 @@
       "type": "poetry",
       "timeOfCreate": "19.12.2018",
       "timeOfPublication": "19.12.2018",
-      "keySize": 414,
+      "keySize": 341,
       "tags": [
         "мрачные",
         "проклятие",
@@ -952,7 +952,7 @@
       "type": "poetry",
       "timeOfCreate": "21.12.2018",
       "timeOfPublication": "22.12.2018",
-      "keySize": 462,
+      "keySize": 382,
       "tags": [
         "мрачные",
         "проклятие",
@@ -975,7 +975,7 @@
       "type": "poetry",
       "timeOfCreate": "23.03.2020",
       "timeOfPublication": "23.03.2020",
-      "keySize": 326,
+      "keySize": 276,
       "tags": [
         "мрачные",
         "проклятие",
@@ -998,7 +998,7 @@
       "type": "poetry",
       "timeOfCreate": "16.07.2020",
       "timeOfPublication": "13.12.2020",
-      "keySize": 322,
+      "keySize": 269,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1021,7 +1021,7 @@
       "type": "poetry",
       "timeOfCreate": "21.08.2020",
       "timeOfPublication": "30.01.2021",
-      "keySize": 447,
+      "keySize": 370,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1044,7 +1044,7 @@
       "type": "poetry",
       "timeOfCreate": "08.01.2021",
       "timeOfPublication": "23.03.2021",
-      "keySize": 314,
+      "keySize": 258,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1058,7 +1058,7 @@
       "illustration": "illustration.png",
       "sound": "",
       "overview": "",
-      "annotation": "Забавный факт... в этом стихотворении ровно 314 символов... что символично соответствует первым 3 цифрам десятичного представления числа π (пи) в метрике L2. ",
+      "annotation": "Забавный факт... в этом стихотворении ровно 314 символов (с пробелами)... что символично соответствует первым 3 цифрам десятичного представления числа π (пи) в метрике L2. ",
       "redacted": "Коваленко М.Е."
     },
     {
@@ -1067,7 +1067,7 @@
       "type": "poetry",
       "timeOfCreate": "13.04.2021",
       "timeOfPublication": "14.04.2021",
-      "keySize": 295,
+      "keySize": 245,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1090,7 +1090,7 @@
       "type": "poetry",
       "timeOfCreate": "18.04.2021",
       "timeOfPublication": "19.04.2021",
-      "keySize": 366,
+      "keySize": 302,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1113,7 +1113,7 @@
       "type": "poetry",
       "timeOfCreate": "01.05.2021",
       "timeOfPublication": "02.05.2021",
-      "keySize": 310,
+      "keySize": 238,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1136,7 +1136,7 @@
       "type": "poetry",
       "timeOfCreate": "16.03.2021",
       "timeOfPublication": "06.05.2021",
-      "keySize": 401,
+      "keySize": 334,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1159,7 +1159,7 @@
       "type": "poetry",
       "timeOfCreate": "28.03.2021",
       "timeOfPublication": "06.05.2021",
-      "keySize": 210,
+      "keySize": 175,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1182,7 +1182,7 @@
       "type": "poetry",
       "timeOfCreate": "14.05.2021",
       "timeOfPublication": "20.05.2021",
-      "keySize": 550,
+      "keySize": 459,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1205,7 +1205,7 @@
       "type": "poetry",
       "timeOfCreate": "27.05.2021",
       "timeOfPublication": "28.05.2021",
-      "keySize": 313,
+      "keySize": 266,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1228,7 +1228,7 @@
       "type": "poetry",
       "timeOfCreate": "31.05.2021",
       "timeOfPublication": "08.06.2021",
-      "keySize": 335,
+      "keySize": 275,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1251,7 +1251,7 @@
       "type": "poetry",
       "timeOfCreate": "05.11.2022",
       "timeOfPublication": "05.11.2022",
-      "keySize": 230,
+      "keySize": 196,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1274,7 +1274,7 @@
       "type": "poetry",
       "timeOfCreate": "20.11.2023",
       "timeOfPublication": "20.11.2023",
-      "keySize": 336,
+      "keySize": 249,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1297,7 +1297,7 @@
       "type": "poetry",
       "timeOfCreate": "28.05.2024",
       "timeOfPublication": "28.05.2024",
-      "keySize": 631,
+      "keySize": 419,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1320,7 +1320,7 @@
       "type": "poetry",
       "timeOfCreate": "01.06.2024",
       "timeOfPublication": "01.06.2024",
-      "keySize": 358,
+      "keySize": 275,
       "tags": [
         "мрачные",
         "проклятие",
@@ -1343,7 +1343,7 @@
       "type": "poetry",
       "timeOfCreate": "01.07.2024",
       "timeOfPublication": "01.07.2024",
-      "keySize": 834,
+      "keySize": 704,
       "tags": [
         "мрачные",
         "страх",
@@ -1365,7 +1365,7 @@
       "type": "poetry",
       "timeOfCreate": "06.07.2024",
       "timeOfPublication": "06.07.2024",
-      "keySize": 478,
+      "keySize": 351,
       "tags": [
         "мрачные",
         "страх",
@@ -1387,7 +1387,7 @@
       "type": "poetry",
       "timeOfCreate": "11.12.2024",
       "timeOfPublication": "12.12.2024",
-      "keySize": 324,
+      "keySize": 274,
       "tags": [
         "мрачные",
         "страх",
@@ -1409,7 +1409,7 @@
       "type": "poetry",
       "timeOfCreate": "23.01.2025",
       "timeOfPublication": "23.01.2025",
-      "keySize": 579,
+      "keySize": 368,
       "tags": [
         "мрачные",
         "страх",
@@ -1431,7 +1431,7 @@
       "type": "poetry",
       "timeOfCreate": "05.03.2025",
       "timeOfPublication": "07.03.2025",
-      "keySize": 356,
+      "keySize": 232,
       "tags": [
         "мрачные",
         "страх",
@@ -1453,7 +1453,7 @@
       "type": "poetry",
       "timeOfCreate": "26.05.2025",
       "timeOfPublication": "26.05.2025",
-      "keySize": 914,
+      "keySize": 721,
       "tags": [
         "мрачные",
         "страх",
@@ -1475,7 +1475,7 @@
       "type": "poetry",
       "timeOfCreate": "26.05.2025",
       "timeOfPublication": "03.10.2025",
-      "keySize": 303,
+      "keySize": 246,
       "tags": [
         "мрачные",
         "страх",
@@ -1490,6 +1490,28 @@
       "overview": "",
       "annotation": "",
       "redacted": "Коваленко М.Е."
+    },
+    {
+      "id": "poetry_lamp_times",
+      "name": "Ламповые времена",
+      "type": "poetry",
+      "timeOfCreate": "31.01.2025",
+      "timeOfPublication": "31.01.2025",
+      "keySize": 634,
+      "tags": [
+        "не мрачные",
+        "страх",
+        "меланхолия",
+        "смерть"
+      ],
+      "base": "/pages/poetry/",
+      "img": "image.jpg",
+      "text": "text.txt",
+      "illustration": "",
+      "sound": "",
+      "overview": "",
+      "annotation": "",
+      "redacted": ""
     }
   ]
 }
