@@ -130,7 +130,9 @@ ipcMain.handle("load-tags", async () => {
     if (!fs.existsSync(TAGS_PATH)) return [];
     const raw = fs.readFileSync(TAGS_PATH, "utf-8");
     const data = JSON.parse(raw);
-    return data.tags || [];
+
+    // data.tags – массив объектов { name, weight }
+    return (data.tags || []).map((t) => t.name);
   } catch (e) {
     console.error(e);
     return [];
