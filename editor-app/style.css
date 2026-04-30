@@ -88,6 +88,14 @@ button {
   font-size: 0.9em;
 }
 
+.clickable-tag {
+  cursor: pointer;
+  user-select: none;
+}
+.clickable-tag:hover {
+  background: #bbb;
+}
+
 /* Модальное окно подтверждения */
 #modal-overlay {
   display: none; /* по умолчанию скрыто, показывается через JS */

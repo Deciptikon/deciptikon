@@ -49,7 +49,7 @@ function renderDetail(poem, textContent) {
 
     <label>Теги (через запятую)</label>
     <input type="text" id="edit-tags" value="${poem.tags.join(", ")}">
-    <div id="tags-display">${tagsHtml}</div>
+    <div id="tags-display"></div>
 
     <!-- Текст стиха -->
     <label>Текст стиха</label>
@@ -93,6 +93,28 @@ function renderDetail(poem, textContent) {
     </div>
   `;
 
+  // Заполняем панель быстрого выбора тегов
+  const tagsDisplay = document.getElementById("tags-display");
+  tagsDisplay.innerHTML = coreTags
+    .map((t) => `<span class="tag clickable-tag">${escapeHtml(t)}</span>`)
+    .join("");
+
+  // Обработчики клика по тегам
+  tagsDisplay.querySelectorAll(".clickable-tag").forEach((tagEl) => {
+    tagEl.addEventListener("click", () => {
+      const tagsInput = document.getElementById("edit-tags");
+      const currentTags = tagsInput.value
+        .split(",")
+        .map((t) => t.trim())
+        .filter(Boolean);
+      const tagValue = tagEl.textContent;
+      if (!currentTags.includes(tagValue)) {
+        currentTags.push(tagValue);
+        tagsInput.value = currentTags.join(", ");
+      }
+    });
+  });
+
   // Логика чекбоксов медиафайлов
   function setupMediaCheckbox(checkboxId, inputId) {
     const checkbox = document.getElementById(checkboxId);
@@ -110,18 +132,6 @@ function renderDetail(poem, textContent) {
   setupMediaCheckbox("has-img", "edit-img");
   setupMediaCheckbox("has-illustration", "edit-illustration");
   setupMediaCheckbox("has-sound", "edit-sound");
-
-  // Теги (динамический показ)
-  const tagsInput = document.getElementById("edit-tags");
-  tagsInput.addEventListener("input", () => {
-    const tags = tagsInput.value
-      .split(",")
-      .map((t) => t.trim())
-      .filter(Boolean);
-    document.getElementById("tags-display").innerHTML = tags
-      .map((t) => `<span class="tag">${escapeHtml(t)}</span>`)
-      .join("");
-  });
 
   // ID: отложенное форматирование
   const idSuffixInput = document.getElementById("edit-id-suffix");
