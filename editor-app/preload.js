@@ -5,6 +5,9 @@ contextBridge.exposeInMainWorld("api", {
   loadDB: () => ipcRenderer.invoke("load-db"),
   saveData: (json) => ipcRenderer.invoke("save-db", json),
 
+  // Тэги
+  loadTags: () => ipcRenderer.invoke("load-tags"),
+
   // Папки
   createFolder: (folderPath) => ipcRenderer.invoke("create-folder", folderPath),
   renameFolder: (oldPath, newPath) =>

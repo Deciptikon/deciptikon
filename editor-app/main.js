@@ -2,12 +2,16 @@ const { app, BrowserWindow, Menu, ipcMain } = require("electron");
 const path = require("path");
 const fs = require("fs");
 
-// Путь к тестовой БД
-const DB_PATH = path.join(__dirname, "..", "db.json")
-console.log("DB_PATH = ", DB_PATH);
-
 // Корень проекта
-const ROOT_DIR = path.join(__dirname, "..")
+const ROOT_DIR = path.join(__dirname, "..");
+
+// Путь к БД
+const DB_PATH = `${ROOT_DIR}\\db.json`;
+console.log("DB_PATH =", DB_PATH);
+
+// Путь к тегам
+const TAGS_PATH = `${ROOT_DIR}\\pages\\poetry\\core-tags.json`;
+console.log("TAGS_PATH =", TAGS_PATH);
 
 // Проверка безопасности пути
 function isSafePath(targetPath) {
@@ -118,6 +122,18 @@ ipcMain.handle("write-text-file", async (event, relativePath, content) => {
     return { success: true };
   } catch (e) {
     return { success: false, error: e.message };
+  }
+});
+
+ipcMain.handle("load-tags", async () => {
+  try {
+    if (!fs.existsSync(TAGS_PATH)) return [];
+    const raw = fs.readFileSync(TAGS_PATH, "utf-8");
+    const data = JSON.parse(raw);
+    return data.tags || [];
+  } catch (e) {
+    console.error(e);
+    return [];
   }
 });
 

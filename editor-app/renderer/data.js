@@ -6,7 +6,7 @@ let selectedId = null;
 const PREFIX = "poetry_";
 
 // Базовый набор тегов для быстрого выбора
-const coreTags = ["мрачные", "проклятие", "страх", "меланхолия", "смерть"];
+//const coreTags = ["мрачные", "проклятие", "страх", "меланхолия", "смерть"];
 
 // DOM-элементы (задаются после загрузки страницы)
 const listEl = document.getElementById("poem-list");
